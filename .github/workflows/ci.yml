@@ -1,0 +1,50 @@
+# 用 money-erp-v2 的 main 當主程式環境，跑這個附加套件的測試（含第 1 集指紋）。
+# 跑在 claw-arm-1 的 self-hosted runner（個人帳號的 GitHub 代管機器已停用）；repo variable RUNS_ON 可改。
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      v2_ref:
+        description: money-erp-v2 的分支或 commit
+        default: main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ${{ fromJSON(vars.RUNS_ON || '["self-hosted","claw-arm-1"]') }}
+    timeout-minutes: 30
+    steps:
+      - name: Isolate HOME
+        run: |
+          mkdir -p "$HOME/ci-home"
+          echo "HOME=$HOME/ci-home" >> "$GITHUB_ENV"
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          path: addon
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          repository: shopee-bank/money-erp-v2
+          ref: ${{ inputs.v2_ref || 'main' }}
+          token: ${{ secrets.V2_READ_TOKEN || github.token }}
+          path: v2
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: 22
+      - uses: astral-sh/setup-uv@d0cc045d04ccac9d8b7881df0226f9e82c39688e # v6
+      - run: uv sync --all-packages --extra test --locked
+        working-directory: v2
+      - run: uv pip install --python v2/.venv/bin/python -e addon
+      - run: ../v2/.venv/bin/python -m pytest -q -p no:cacheprovider
+        working-directory: addon
+      - run: ../v2/.venv/bin/python tests/papa_golden.py
+        working-directory: addon

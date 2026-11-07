@@ -1,0 +1,1124 @@
+{
+ "episode": 1,
+ "title": "換毛季",
+ "teaser": "弟弟開始搶貝貝的玩具？",
+ "logline": "換毛季，爸爸以為貓會自己舔乾淨，弟弟已經在抓地上的毛；媽媽和姊姊示範梳毛 3 件事，結果梳下來的毛被貝貝撲成一身橘。",
+ "sources": {
+  "S1": {
+   "url": "https://animal.moa.gov.tw/public/upload/Know_ArticleFile/251224011608838794UDZMX.pdf",
+   "quotes": [
+    "應適時提供貓咪具有化毛作用的食品，以免貓咪會因為食入過多脫落的毛髮，在體內形成毛球而影響其健康。"
+   ]
+  },
+  "S2": {
+   "url": "https://www.tpnhfs.org.tw/edcontent_d.php?lang=tw&tb=7&id=1492",
+   "quotes": [
+    "定期梳毛：減少貓咪舔入過多毛髮，每天或至少每週梳理幾次，特別是長毛貓更需要頻繁梳毛。",
+    "而在換毛季加強環境清潔，也能降低掉落毛髮被誤食的風險，進一步預防毛球堆積的問題。",
+    "反覆乾咳或乾嘔（有時無法吐出毛球）",
+    "如毛孩們的排毛情況不佳時，請務必到獸醫院進行檢查！"
+   ]
+  },
+  "S3": {
+   "url": "https://animal.moa.gov.tw/public/upload/Know_ArticleFile/251224011538456576U41VU.pdf",
+   "quotes": [
+    "飼主在照護犬隻、清理犬隻的排泄物或生活環境後，應馬上洗手，並且避免與犬隻共用餐具，以預防人犬共通的傳染疾病。"
+   ]
+  }
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "type": "WIDE",
+   "dur": 2.0,
+   "act": "cold",
+   "scene": "living",
+   "freeze_at": 0.0,
+   "fx": [
+    "tufts"
+   ],
+   "cast": [
+    {
+     "who": "papa",
+     "pose": "lie",
+     "x": 700,
+     "y": 1245,
+     "ppc": 4.6,
+     "mood": "unimpressed",
+     "look_at": "camera",
+     "mouth": "talk"
+    },
+    {
+     "who": "dad",
+     "pose": "flail",
+     "x": 1230,
+     "y": 1840,
+     "ppc": 6.2,
+     "gesture": "shake",
+     "gesture_at": 0.3
+    }
+   ],
+   "lines": [
+    {
+     "text": [
+      "我先說，",
+      "這不全是我的。"
+     ],
+     "at": 0.0,
+     "dur": 2.0
+    }
+   ],
+   "sfx": [
+    [
+     "scratch",
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "s02",
+   "type": "CU",
+   "dur": 1.2,
+   "act": "cold",
+   "head": {
+    "who": "papa",
+    "expr": "unimpressed"
+   },
+   "bg_spot": "sofa",
+   "lines": [
+    {
+     "text": [
+      "事情是這樣的…"
+     ],
+     "at": 0.0,
+     "dur": 1.2
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "type": "TITLE",
+   "dur": 2.0,
+   "act": "title"
+  },
+  {
+   "id": "s04",
+   "type": "POV",
+   "dur": 2.3,
+   "act": "act1",
+   "scene": "living",
+   "fx": [
+    "tufts"
+   ],
+   "cast": [
+    {
+     "who": "dad",
+     "pose": "stand",
+     "x": 900,
+     "y": 1990
+    },
+    {
+     "who": "mom",
+     "pose": "stand",
+     "x": 1480,
+     "y": 1960,
+     "gesture": "nod",
+     "gesture_at": 0.8
+    }
+   ],
+   "lines": [
+    {
+     "text": [
+      "我是帕帕，",
+      "這家的老大。"
+     ],
+     "at": 0.3,
+     "dur": 1.9,
+     "avatar": "smug"
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "type": "REACTION",
+   "dur": 2.4,
+   "act": "act1",
+   "scene": "living",
+   "cast": [
+    {
+     "who": "sister",
+     "pose": "sit",
+     "x": 880,
+     "y": 1830,
+     "ppc": 5.6,
+     "look_at": "papa",
+     "look_at_at": 0.3,
+     "mood_to": "happy",
+     "mood_at": 0.5
+    },
+    {
+     "who": "brother",
+     "pose": "sit",
+     "x": 1110,
+     "y": 1860,
+     "ppc": 5.8,
+     "look_at": "papa",
+     "look_at_at": 0.4,
+     "mood_to": "laugh",
+     "mood_at": 0.7
+    },
+    {
+     "who": "papa",
+     "pose": "lie",
+     "x": 1340,
+     "y": 1870,
+     "ppc": 6.0,
+     "mood": "soft",
+     "look_at": "brother",
+     "mouth": "talk"
+    }
+   ],
+   "lines": [
+    {
+     "text": [
+      "姊姊和弟弟，",
+      "目前最愛我。"
+     ],
+     "at": 0.2,
+     "dur": 2.1
+    }
+   ],
+   "sfx": [
+    [
+     "giggle",
+     0.3
+    ]
+   ]
+  },
+  {
+   "id": "s06",
+   "type": "TRACK",
+   "dur": 1.8,
+   "act": "act1",
+   "scene": "living",
+   "fx": [
+    "near"
+   ],
+   "cast": [
+    {
+     "who": "beibei",
+     "pose": "run",
+     "x": 820,
+     "y": 1780,
+     "ppc": 7.2,
+     "move_to": 2050,
+     "look_at": "camera"
+    }
+   ],
+   "lines": [
+    {
+     "text": [
+      "那是貝貝。"
+     ],
+     "at": 0.15,
+     "dur": 1.2,
+     "avatar": "neutral"
+    }
+   ],
+   "sfx": [
+    [
+     "steps",
+     0.1
+    ],
+    [
+     "bark",
+     0.7
+    ]
+   ]
+  },
+  {
+   "id": "s07",
+   "type": "WIDE",
+   "dur": 2.8,
+   "act": "act1",
+   "scene": "living",
+   "zoom": 1.0,
+   "fx": [
+    "tufts"
+   ],
+   "cast": [
+    {
+     "who": "papa",
+     "pose": "sit",
+     "x": 1120,
+     "y": 1780,
+     "ppc": 7.0,
+     "look_at": "camera",
+     "mouth": "talk",
+     "gesture": "shake",
+     "gesture_at": 1.0
+    },
+    {
+     "who": "beibei",
+     "pose": "sit",
+     "x": 1420,
+     "y": 1690,
+     "ppc": 5.6,
+     "mood": "happy",
+     "look_at": "papa",
+     "look_at_at": 0.5
+    }
+   ],
+   "lines": [
+    {
+     "text": [
+      "最近換毛季，",
+      "我掉毛掉很兇。"
+     ],
+     "at": 0.3,
+     "dur": 2.3
+    }
+   ]
+  },
+  {
+   "id": "s08",
+   "type": "REACTION",
+   "dur": 3.0,
+   "act": "act1",
+   "mood": "trouble",
+   "fx": [
+    "tufts"
+   ],
+   "lines": [
+    {
+     "text": [
+      "爸爸說："
+     ],
+     "at": 0.1,
+     "dur": 1.2
+    },
+    {
+     "text": [
+      "「貓會自己",
+      "舔乾淨啦」"
+     ],
+     "at": 1.35,
+     "dur": 1.6
+    }
+   ],
+   "scene": "living",
+   "cast": [
+    {
+     "who": "dad",
+     "x": 1330,
+     "y": 1830,
+     "ppc": 6.0,
+     "pose": "stand",
+     "show": [
+      0,
+      1.45
+     ]
+    },
+    {
+     "who": "dad",
+     "x": 1330,
+     "y": 1830,
+     "ppc": 6.0,
+     "pose": "shrug",
+     "show": [
+      1.45,
+      3.0
+     ]
+    },
+    {
+     "who": "papa",
+     "pose": "sit",
+     "x": 1000,
+     "y": 1840,
+     "ppc": 7.0,
+     "mood": "smug",
+     "mood_to": "unimpressed",
+     "mood_at": 1.4,
+     "look_at": "dad",
+     "look_at_at": 0.2,
+     "mouth": "talk"
+    }
+   ]
+  },
+  {
+   "id": "s09",
+   "type": "CU",
+   "dur": 3.0,
+   "act": "act1",
+   "mood": "trouble",
+   "head": {
+    "who": "papa",
+    "expr": "surprised",
+    "gesture": "gag",
+    "gesture_at": 0.08,
+    "look": [
+     0.6,
+     -0.4
+    ],
+    "look_at_at": 0.8
+   },
+   "fx": [
+    "lines"
+   ],
+   "hairball_at": 0.7,
+   "onoma": [
+    {
+     "text": "嘔！",
+     "at": 0.1
+    },
+    {
+     "text": "嘔！",
+     "at": 0.4
+    }
+   ],
+   "lines": [
+    {
+     "text": [
+      "舔下去的毛，",
+      "會在肚子變毛球。"
+     ],
+     "at": 0.6,
+     "dur": 2.4
+    }
+   ],
+   "sfx": [
+    [
+     "gag",
+     0.1
+    ],
+    [
+     "gag",
+     0.4
+    ],
+    [
+     "pop",
+     0.7
+    ]
+   ]
+  },
+  {
+   "id": "s10",
+   "type": "REACTION",
+   "dur": 1.6,
+   "act": "act1",
+   "mood": "trouble",
+   "scene": "living",
+   "cast": [
+    {
+     "who": "beibei",
+     "pose": "hide",
+     "x": 1500,
+     "y": 1640,
+     "ppc": 6.4
+    }
+   ],
+   "sfx": [
+    [
+     "whimper",
+     0.2
+    ]
+   ]
+  },
+  {
+   "id": "s10b",
+   "type": "WIDE",
+   "dur": 2.6,
+   "act": "act1",
+   "scene": "living",
+   "fx": [
+    "floor_tufts",
+    "tufts"
+   ],
+   "fur_pile": {
+    "x": 1080,
+    "y": 1860,
+    "size": 340
+   },
+   "cast": [
+    {
+     "who": "brother",
+     "pose": "sit",
+     "x": 1250,
+     "y": 1840,
+     "ppc": 7.0,
+     "mood_to": "laugh",
+     "mood_at": 0.5,
+     "gesture": "reach",
+     "gesture_at": 0.2,
+     "look_at": [
+      1080,
+      1860
+     ]
+    }
+   ],
+   "lines": [
+    {
+     "text": [
+      "弟弟已經",
+      "在抓地上的毛了。"
+     ],
+     "at": 0.3,
+     "dur": 2.2,
+     "avatar": "surprised"
+    }
+   ],
+   "sfx": [
+    [
+     "pop",
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "s11",
+   "type": "INSERT",
+   "dur": 2.8,
+   "act": "act1",
+   "mood": "trouble",
+   "scene": "living",
+   "hand": {
+    "prop": "dad_comb",
+    "at": 0.3
+   },
+   "freeze_at": 1.5,
+   "lines": [
+    {
+     "text": [
+      "於是爸爸拿出…"
+     ],
+     "at": 0.2,
+     "dur": 1.25,
+     "avatar": "neutral"
+    },
+    {
+     "text": [
+      "他自己的梳子。"
+     ],
+     "at": 1.55,
+     "dur": 1.25,
+     "avatar": "unimpressed"
+    }
+   ],
+   "sfx": [
+    [
+     "scratch",
+     1.5
+    ]
+   ]
+  },
+  {
+   "id": "s12",
+   "type": "WHIP",
+   "dur": 2.0,
+   "act": "act2",
+   "scene": "living",
+   "cast": [
+    {
+     "who": "mom",
+     "pose": "stand",
+     "x": 1760,
+     "y": 1800,
+     "ppc": 6.0,
+     "gesture": "nod",
+     "gesture_at": 0.9
+    },
+    {
+     "who": "papa",
+     "pose": "sit",
+     "x": 1460,
+     "y": 1820,
+     "ppc": 7.0,
+     "mood": "neutral",
+     "look_at": "mom",
+     "look_at_at": 0.3,
+     "mouth": "talk"
+    }
+   ],
+   "lines": [
+    {
+     "text": [
+      "還好，",
+      "媽媽出手了。"
+     ],
+     "at": 0.3,
+     "dur": 1.6
+    }
+   ],
+   "sfx": [
+    [
+     "whoosh",
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "s13",
+   "type": "EXPLAIN",
+   "dur": 1.8,
+   "act": "act2",
+   "sign": [
+    "梳毛",
+    "3 件事"
+   ],
+   "lines": [
+    {
+     "text": [
+      "所以，還是要梳。"
+     ],
+     "at": 0.3,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "s14",
+   "type": "INSERT",
+   "dur": 4.2,
+   "act": "act2",
+   "scene": "living",
+   "demo": {
+    "use": "comb_a_clean",
+    "full": "comb_b_full",
+    "released": "comb_c_released",
+    "drop": "comb_fur_clump",
+    "lift_at": 1.6,
+    "press_at": 2.8
+   },
+   "step": {
+    "n": 1,
+    "title": "定期梳毛",
+    "sub": "每天，至少每週幾次",
+    "source": "S2",
+    "quote": "定期梳毛：減少貓咪舔入過多毛髮，每天或至少每週梳理幾次，特別是長毛貓更需要頻繁梳毛。"
+   },
+   "sfx": [
+    [
+     "brush",
+     0.6
+    ],
+    [
+     "brush",
+     1.2
+    ],
+    [
+     "pop",
+     1.6
+    ],
+    [
+     "click",
+     2.8
+    ],
+    [
+     "whoosh",
+     2.85
+    ]
+   ]
+  },
+  {
+   "id": "s15",
+   "type": "REACTION",
+   "dur": 2.0,
+   "act": "act2",
+   "onoma": [
+    {
+     "text": "呼嚕嚕",
+     "at": 0.3
+    }
+   ],
+   "sfx": [
+    [
+     "purr",
+     0.1
+    ]
+   ],
+   "scene": "living",
+   "cast": [
+    {
+     "who": "mom",
+     "pose": "crouch",
+     "x": 1478,
+     "y": 1818,
+     "ppc": 6.4,
+     "flip": true,
+     "touch": "papa"
+    },
+    {
+     "who": "papa",
+     "pose": "sit",
+     "x": 1240,
+     "y": 1815,
+     "ppc": 7.0,
+     "mood": "soft",
+     "eyes": "closed",
+     "look_at": "mom",
+     "gesture": "lean",
+     "gesture_at": 0.15
+    },
+    {
+     "who": "sister",
+     "pose": "crouch",
+     "x": 1000,
+     "y": 1810,
+     "ppc": 6.4,
+     "look_at": "papa",
+     "look_at_at": 0.2,
+     "mood_to": "happy",
+     "mood_at": 0.6
+    }
+   ]
+  },
+  {
+   "id": "s16",
+   "type": "INSERT",
+   "dur": 3.0,
+   "act": "act2",
+   "scene": "living",
+   "hand": {
+    "prop": "hand_dad_vacuum",
+    "at": 0.0,
+    "motion": "sweep"
+   },
+   "fx": [
+    "floor_tufts"
+   ],
+   "step": {
+    "n": 2,
+    "title": "換毛季",
+    "sub": "多清潔環境",
+    "source": "S2",
+    "quote": "而在換毛季加強環境清潔，也能降低掉落毛髮被誤食的風險，進一步預防毛球堆積的問題。"
+   },
+   "sfx": [
+    [
+     "vacuum",
+     0.4
+    ]
+   ]
+  },
+  {
+   "id": "s17",
+   "type": "INSERT",
+   "dur": 2.6,
+   "act": "act2",
+   "scene": "living",
+   "hand": {
+    "prop": "mom_kid_wash",
+    "at": 0.0
+   },
+   "step": {
+    "n": 3,
+    "title": "摸完、梳完毛",
+    "sub": "馬上洗手",
+    "source": "S3",
+    "quote": "飼主在照護犬隻、清理犬隻的排泄物或生活環境後，應馬上洗手，並且避免與犬隻共用餐具，以預防人犬共通的傳染疾病。"
+   }
+  },
+  {
+   "id": "s18",
+   "type": "SPLIT",
+   "dur": 2.6,
+   "act": "act2",
+   "scene": "living",
+   "split": [
+    {
+     "prop": "dad_comb",
+     "label": "拿人的梳子",
+     "good": false
+    },
+    {
+     "prop": "hand_mom_comb",
+     "label": "寵物排梳、定期梳",
+     "good": true
+    }
+   ],
+   "sfx": [
+    [
+     "pop",
+     0.5
+    ],
+    [
+     "pop",
+     2.0
+    ]
+   ]
+  },
+  {
+   "id": "s19",
+   "type": "WIDE",
+   "dur": 5.4,
+   "act": "act3",
+   "scene": "living",
+   "fur_pile": {
+    "x": 1330,
+    "y": 1800,
+    "size": 300
+   },
+   "poof_at": 4.3,
+   "cast": [
+    {
+     "who": "mom",
+     "pose": "crouch",
+     "x": 922,
+     "y": 1880,
+     "ppc": 6.8,
+     "touch": "papa"
+    },
+    {
+     "who": "papa",
+     "pose": "lie",
+     "x": 1210,
+     "y": 1800,
+     "ppc": 7.4,
+     "mood": "soft",
+     "mood_to": "surprised",
+     "mood_at": 2.7,
+     "look_at": "beibei",
+     "look_at_at": 2.7,
+     "mouth": "talk"
+    },
+    {
+     "who": "beibei",
+     "pose": "run",
+     "x": 2400,
+     "y": 1790,
+     "ppc": 6.6,
+     "flip": true,
+     "move_to": 1720,
+     "move_dur": 1.5,
+     "show": [
+      2.6,
+      4.1
+     ],
+     "action": "hop",
+     "look_at": [
+      1330,
+      1650
+     ],
+     "look_at_at": 2.8
+    },
+    {
+     "who": "beibei",
+     "pose": "dive",
+     "x": 1700,
+     "y": 1700,
+     "ppc": 6.6,
+     "show": [
+      4.1,
+      5.4
+     ],
+     "action": "dive",
+     "at": 4.1,
+     "dive_dx": -340,
+     "look_at": [
+      1330,
+      1750
+     ],
+     "look_at_at": 4.1
+    }
+   ],
+   "lines": [
+    {
+     "text": [
+      "好啦，",
+      "是有舒服一點。"
+     ],
+     "at": 0.3,
+     "dur": 1.8
+    },
+    {
+     "text": [
+      "等等，",
+      "貝貝你要幹嘛？"
+     ],
+     "at": 2.7,
+     "dur": 1.6
+    }
+   ],
+   "sfx": [
+    [
+     "steps",
+     2.6
+    ],
+    [
+     "whoosh",
+     4.1
+    ],
+    [
+     "pop",
+     4.3
+    ]
+   ]
+  },
+  {
+   "id": "s21",
+   "type": "REACTION",
+   "dur": 2.4,
+   "act": "act3",
+   "scene": "living",
+   "fx": [
+    "tufts"
+   ],
+   "cast": [
+    {
+     "who": "papa",
+     "pose": "lie",
+     "x": 740,
+     "y": 1800,
+     "ppc": 6.2,
+     "mood": "surprised",
+     "look_at": "beibei",
+     "look_at_at": 0.4
+    },
+    {
+     "who": "brother",
+     "x": 1020,
+     "y": 1730,
+     "ppc": 5.6,
+     "mood": "surprised",
+     "look_at": "papa",
+     "look_at_at": 0.9,
+     "mood_to": "laugh",
+     "mood_at": 0.9,
+     "pose": "sit"
+    },
+    {
+     "who": "beibei",
+     "pose": "furry",
+     "x": 1300,
+     "y": 1820,
+     "ppc": 6.8,
+     "action": "pop_in",
+     "at": 0.15,
+     "look_at": "brother",
+     "look_at_at": 0.6
+    }
+   ],
+   "onoma": [
+    {
+     "text": "噗！",
+     "at": 0.15
+    }
+   ],
+   "sfx": [
+    [
+     "pop",
+     0.15
+    ],
+    [
+     "giggle",
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "s22",
+   "type": "CU",
+   "dur": 1.8,
+   "act": "act3",
+   "head": {
+    "who": "papa",
+    "expr": "surprised",
+    "look": [
+     0.8,
+     0.5
+    ],
+    "look_at_at": 0.15
+   },
+   "fx": [
+    "tufts"
+   ],
+   "lines": [
+    {
+     "text": [
+      "…那是我的毛。"
+     ],
+     "at": 0.2,
+     "dur": 1.4
+    }
+   ]
+  },
+  {
+   "id": "s23",
+   "type": "REACTION",
+   "dur": 3.0,
+   "act": "act3",
+   "head": {
+    "who": "beibei",
+    "expr": "furry"
+   },
+   "hand": {
+    "prop": "hand_comb_reach",
+    "at": 0.15,
+    "top": 380
+   },
+   "freeze_at": 0.8,
+   "lines": [
+    {
+     "text": [
+      "好啦，",
+      "下一個換你。"
+     ],
+     "at": 0.9,
+     "dur": 1.8,
+     "avatar": "unimpressed"
+    }
+   ],
+   "sfx": [
+    [
+     "scratch",
+     0.8
+    ]
+   ]
+  },
+  {
+   "id": "s24",
+   "type": "PULLOUT",
+   "dur": 3.6,
+   "act": "close",
+   "scene": "living",
+   "cast": [
+    {
+     "who": "papa",
+     "pose": "sit",
+     "x": 1150,
+     "y": 1920,
+     "ppc": 6.6,
+     "mood": "smug",
+     "look_at": "camera",
+     "mouth": "talk"
+    },
+    {
+     "who": "dad",
+     "pose": "stand",
+     "x": 640,
+     "y": 1760,
+     "ppc": 5.0,
+     "gesture": "nod",
+     "gesture_at": 1.6
+    },
+    {
+     "who": "sister",
+     "pose": "stand",
+     "x": 890,
+     "y": 1840,
+     "ppc": 5.6,
+     "look_at": "papa",
+     "look_at_at": 0.6,
+     "mood_to": "happy",
+     "mood_at": 1.2
+    },
+    {
+     "who": "brother",
+     "pose": "stand",
+     "x": 1390,
+     "y": 1880,
+     "ppc": 6.0,
+     "look_at": "beibei",
+     "look_at_at": 0.4,
+     "mood_to": "laugh",
+     "mood_at": 0.9
+    },
+    {
+     "who": "beibei",
+     "pose": "furry",
+     "x": 1640,
+     "y": 1930,
+     "ppc": 6.2,
+     "look_at": "papa",
+     "look_at_at": 0.5
+    },
+    {
+     "who": "mom",
+     "pose": "stand",
+     "x": 1820,
+     "y": 1720,
+     "ppc": 5.0
+    }
+   ],
+   "lines": [
+    {
+     "text": [
+      "轉給家裡",
+      "負責吸地的那個人。"
+     ],
+     "at": 1.0,
+     "dur": 2.5
+    }
+   ]
+  },
+  {
+   "id": "s25",
+   "type": "END",
+   "dur": 2.4,
+   "act": "close"
+  }
+ ],
+ "cut": [
+  {
+   "id": "s01",
+   "dur": 2.0
+  },
+  {
+   "id": "s02",
+   "dur": 1.2
+  },
+  {
+   "id": "s09",
+   "dur": 3.0
+  },
+  {
+   "id": "s14",
+   "dur": 3.4
+  },
+  {
+   "id": "s16",
+   "dur": 2.2
+  },
+  {
+   "id": "s17",
+   "dur": 2.0
+  },
+  {
+   "id": "s19",
+   "dur": 3.0,
+   "lines": [
+    {
+     "text": [
+      "等等，",
+      "貝貝你要幹嘛？"
+     ],
+     "at": 0.3,
+     "dur": 1.6
+    }
+   ]
+  },
+  {
+   "id": "s21",
+   "dur": 2.0
+  },
+  {
+   "id": "s23",
+   "dur": 2.6
+  },
+  {
+   "id": "s24",
+   "dur": 3.0,
+   "lines": [
+    {
+     "text": [
+      "轉給家裡",
+      "負責吸地的那個人。"
+     ],
+     "at": 0.4,
+     "dur": 2.5
+    }
+   ]
+  }
+ ],
+ "topic": "shedding"
+}

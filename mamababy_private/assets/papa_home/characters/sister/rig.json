@@ -1,0 +1,718 @@
+{
+ "canvas": [
+  1024,
+  1024
+ ],
+ "foot": [
+  512,
+  960
+ ],
+ "poses": {
+  "stand": {
+   "file": "pose_stand.webp",
+   "world_height": 128,
+   "expression": "smile",
+   "bbox": [
+    360,
+    60,
+    664,
+    960
+   ],
+   "parts": {
+    "body": {
+     "file": "p_stand_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 1.0,
+      "outside_diff": 5.4,
+      "iou": 0.9994,
+      "remnant": {
+       "front": 0.009,
+       "front2": 0.012,
+       "hind": 0.003
+      },
+      "remnant_before": {
+       "front": 0.905,
+       "front2": 0.893,
+       "hind": 0.997
+      }
+     }
+    },
+    "head": {
+     "file": "p_stand_head.webp",
+     "pivot": [
+      509,
+      316
+     ],
+     "bbox": [
+      374,
+      60,
+      647,
+      352
+     ],
+     "avatar_scale": 0.3504,
+     "expressions": {
+      "happy": {
+       "file": "p_stand_head_happy.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.984,
+        "body_diff": 10.1,
+        "head_changed": 14.4,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.993
+       }
+      },
+      "angry": {
+       "file": "p_stand_head_angry.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.983,
+        "body_diff": 10.1,
+        "head_changed": 15.6,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.996
+       }
+      },
+      "surprised": {
+       "file": "p_stand_head_surprised.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.983,
+        "body_diff": 10.1,
+        "head_changed": 12.9,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.993
+       }
+      },
+      "sad": {
+       "file": "p_stand_head_sad.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.983,
+        "body_diff": 10.0,
+        "head_changed": 12.5,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.996
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_stand_front.webp",
+     "pivot": [
+      394,
+      486
+     ],
+     "bbox": [
+      361,
+      454,
+      427,
+      669
+     ]
+    },
+    "front2": {
+     "file": "p_stand_front2.webp",
+     "pivot": [
+      629,
+      485
+     ],
+     "bbox": [
+      596,
+      453,
+      663,
+      668
+     ]
+    },
+    "hind": {
+     "file": "p_stand_hind.webp",
+     "pivot": [
+      514,
+      750
+     ],
+     "bbox": [
+      418,
+      714,
+      610,
+      960
+     ]
+    }
+   },
+   "shadow": {
+    "y": 950
+   }
+  },
+  "sit": {
+   "file": "pose_sit.webp",
+   "world_height": 72,
+   "expression": "smile",
+   "bbox": [
+    269,
+    60,
+    755,
+    960
+   ],
+   "parts": {
+    "body": {
+     "file": "p_sit_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 1.0,
+      "outside_diff": 6.3,
+      "iou": 0.9943,
+      "remnant": {
+       "front": 0.002,
+       "front2": 0.001,
+       "hind": 0.002
+      },
+      "remnant_before": {
+       "front": 0.002,
+       "front2": 0.001,
+       "hind": 0.025
+      }
+     }
+    },
+    "head": {
+     "file": "p_sit_head.webp",
+     "pivot": [
+      510,
+      355
+     ],
+     "bbox": [
+      355,
+      61,
+      668,
+      396
+     ],
+     "avatar_scale": 0.402,
+     "expressions": {
+      "happy": {
+       "file": "p_sit_head_happy.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.991,
+        "body_diff": 9.2,
+        "head_changed": 11.7,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.987
+       }
+      },
+      "angry": {
+       "file": "p_sit_head_angry.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.991,
+        "body_diff": 9.2,
+        "head_changed": 13.4,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.987
+       }
+      },
+      "surprised": {
+       "file": "p_sit_head_surprised.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.991,
+        "body_diff": 9.2,
+        "head_changed": 10.6,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.987
+       }
+      },
+      "sad": {
+       "file": "p_sit_head_sad.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.991,
+        "body_diff": 9.4,
+        "head_changed": 12.3,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.987
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_sit_front.webp",
+     "pivot": [
+      436,
+      559
+     ],
+     "bbox": [
+      364,
+      513,
+      508,
+      826
+     ]
+    },
+    "front2": {
+     "file": "p_sit_front2.webp",
+     "pivot": [
+      592,
+      560
+     ],
+     "bbox": [
+      522,
+      514,
+      663,
+      825
+     ]
+    },
+    "hind": {
+     "file": "p_sit_hind.webp",
+     "pivot": [
+      512,
+      761
+     ],
+     "bbox": [
+      270,
+      727,
+      754,
+      958
+     ]
+    }
+   },
+   "shadow": {
+    "y": 905,
+    "h": 0.32,
+    "w": 0.9
+   }
+  },
+  "walk": {
+   "file": "pose_walk.webp",
+   "world_height": 126,
+   "expression": "smile",
+   "bbox": [
+    306,
+    60,
+    718,
+    960
+   ],
+   "parts": {
+    "body": {
+     "file": "p_walk_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 1.0,
+      "outside_diff": 6.4,
+      "iou": 0.9899,
+      "remnant": {
+       "front": 0.011,
+       "front2": 0.003,
+       "hind": 0.003
+      },
+      "remnant_before": {
+       "front": 0.57,
+       "front2": 0.786,
+       "hind": 0.376
+      }
+     }
+    },
+    "head": {
+     "file": "p_walk_head.webp",
+     "pivot": [
+      489,
+      317
+     ],
+     "bbox": [
+      359,
+      61,
+      616,
+      352
+     ],
+     "expressions": {
+      "happy": {
+       "file": "p_walk_head_happy.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.994,
+        "iou": 0.983,
+        "body_diff": 10.5,
+        "head_changed": 10.3,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.996
+       }
+      },
+      "angry": {
+       "file": "p_walk_head_angry.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.998,
+        "iou": 0.984,
+        "body_diff": 10.5,
+        "head_changed": 9.3,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.992
+       }
+      },
+      "surprised": {
+       "file": "p_walk_head_surprised.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.984,
+        "body_diff": 10.7,
+        "head_changed": 9.3,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.992
+       }
+      },
+      "sad": {
+       "file": "p_walk_head_sad.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.984,
+        "body_diff": 10.8,
+        "head_changed": 9.1,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.992
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_walk_front.webp",
+     "pivot": [
+      381,
+      478
+     ],
+     "bbox": [
+      319,
+      446,
+      443,
+      661
+     ]
+    },
+    "front2": {
+     "file": "p_walk_front2.webp",
+     "pivot": [
+      630,
+      487
+     ],
+     "bbox": [
+      578,
+      461,
+      682,
+      639
+     ]
+    },
+    "hind": {
+     "file": "p_walk_hind.webp",
+     "pivot": [
+      511,
+      750
+     ],
+     "bbox": [
+      307,
+      714,
+      716,
+      958
+     ]
+    }
+   },
+   "shadow": {
+    "y": 950
+   }
+  },
+  "crouch": {
+   "file": "pose_crouch.webp",
+   "world_height": 80,
+   "expression": "smile",
+   "bbox": [
+    210,
+    60,
+    814,
+    960
+   ],
+   "parts": {
+    "body": {
+     "file": "p_crouch_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 1.0,
+      "outside_diff": 8.0,
+      "iou": 0.9971,
+      "remnant": {
+       "front": 0.014,
+       "front2": 0.007,
+       "hind": 0.002
+      },
+      "remnant_before": {
+       "front": 0.766,
+       "front2": 0.001,
+       "hind": 0.757
+      }
+     }
+    },
+    "head": {
+     "file": "p_crouch_head.webp",
+     "pivot": [
+      525,
+      375
+     ],
+     "bbox": [
+      364,
+      60,
+      702,
+      419
+     ],
+     "avatar_scale": 0.4308,
+     "expressions": {
+      "happy": {
+       "file": "p_crouch_head_happy.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": 0,
+        "inside": 0.995,
+        "iou": 0.99,
+        "body_diff": 6.0,
+        "head_changed": 14.0,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.997
+       }
+      },
+      "angry": {
+       "file": "p_crouch_head_angry.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": 0,
+        "inside": 0.996,
+        "iou": 0.99,
+        "body_diff": 6.2,
+        "head_changed": 10.2,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.997
+       }
+      },
+      "surprised": {
+       "file": "p_crouch_head_surprised.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": 0,
+        "inside": 0.996,
+        "iou": 0.99,
+        "body_diff": 6.1,
+        "head_changed": 9.2,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.997
+       }
+      },
+      "sad": {
+       "file": "p_crouch_head_sad.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": 0,
+        "inside": 0.995,
+        "iou": 0.99,
+        "body_diff": 6.0,
+        "head_changed": 10.0,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.997
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_crouch_front.webp",
+     "pivot": [
+      342,
+      545
+     ],
+     "bbox": [
+      212,
+      511,
+      473,
+      744
+     ]
+    },
+    "front2": {
+     "file": "p_crouch_front2.webp",
+     "pivot": [
+      489,
+      574
+     ],
+     "bbox": [
+      341,
+      533,
+      637,
+      808
+     ]
+    },
+    "hind": {
+     "file": "p_crouch_hind.webp",
+     "pivot": [
+      571,
+      755
+     ],
+     "bbox": [
+      434,
+      719,
+      709,
+      960
+     ]
+    }
+   },
+   "shadow": {
+    "x": [
+     434,
+     709
+    ],
+    "y": 948,
+    "w": 1.0,
+    "h": 0.22
+   }
+  }
+ },
+ "heads": {
+  "smile": {
+   "file": "head_smile.webp",
+   "neck": [
+    512,
+    962
+   ],
+   "eyes": null
+  },
+  "happy": {
+   "file": "head_happy.webp",
+   "neck": [
+    512,
+    962
+   ],
+   "eyes": null
+  },
+  "angry": {
+   "file": "head_angry.webp",
+   "neck": [
+    512,
+    962
+   ],
+   "eyes": null
+  },
+  "surprised": {
+   "file": "head_surprised.webp",
+   "neck": [
+    512,
+    962
+   ],
+   "eyes": null
+  },
+  "sad": {
+   "file": "head_sad.webp",
+   "neck": [
+    512,
+    962
+   ],
+   "eyes": null
+  }
+ },
+ "note": "world_height 單位 cm；新角色由 scripts/papa_character.py 從定裝圖生成，零件由 papa_rig_parts 拆"
+}

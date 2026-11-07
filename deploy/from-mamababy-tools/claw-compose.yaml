@@ -1,0 +1,41 @@
+# claw-arm-1（James 的正式機）專用：用 Docker 版內建排程器取代 systemd timer。
+# 不要直接 docker compose up，一律經 apps/ops-cli/deploy/claw_docker.sh（cutover／deploy／rollback），
+# 它會先停 systemd timer、寫 ~/.mamababy/runtime=docker，避免兩套同時跑（BigSeller 互踢、重複下 1688 單）。
+#
+# 和新賣家版（compose.yaml）不同的地方：
+# - 沿用主機家目錄：整個 $HOME 以同路徑掛進容器、用主機使用者的 uid/gid 跑，所以 ~/.mamababy/.env、私鑰、
+#   各平台 cookie/token、codex/agy/claude 登入、.env 裡的絕對路徑都和 systemd 版同一份，不用搬。
+# - network_mode: host：Postiz（127.0.0.1:4007）、n8n（127.0.0.1:5678）等照舊用 localhost 連。
+# - Postiz 資料庫照舊 `docker exec postiz-postgres`：掛主機的 docker CLI 與 socket（主機使用者本來就能用 docker）。
+# - 不跑 firebase-setup：claw 的後台與規則照舊由 deploy-web.yml／deploy-rules.yml 部署。
+# - 換版時等還在跑的工作做完（MAMABABY_DRAIN_SEC＝所有 .service 最長的逾時），stop_grace_period 比它長。
+# 變數由 claw_docker.sh 寫在 ~/.mamababy/claw-docker.env。
+name: mamababy-claw
+
+services:
+  ops:
+    image: ${IMAGE:?IMAGE}
+    restart: unless-stopped
+    user: "${CLAW_UID:?CLAW_UID}:${CLAW_GID:?CLAW_GID}"
+    group_add:
+      - "${CLAW_DOCKER_GID:?CLAW_DOCKER_GID}"
+    network_mode: host
+    environment:
+      HOME: ${CLAW_HOME:?CLAW_HOME}
+      PYTHONNOUSERSITE: "1" # 不讀主機 ~/.local 的 Python 套件
+      MAMABABY_SKIP_FIREBASE_SETUP: "1"
+      MAMABABY_HOST_LABEL: claw-arm-1（docker）
+      MAMABABY_DRAIN_SEC: ${CLAW_DRAIN_SEC:?CLAW_DRAIN_SEC} # 最長工作的 TimeoutStartSec（claw_docker.sh 算）
+    volumes:
+      - ${CLAW_HOME}:${CLAW_HOME}
+      - ${CLAW_HOME}/mamababy-tools/data:/app/data
+      - ${CLAW_HOME}/mamababy-tools/reports:/app/reports
+      - ${CLAW_ROOT_ENV:?CLAW_ROOT_ENV}:/app/.env:ro # repo 根目錄 .env（systemd 版 load_root_env 會讀；沒有就 /dev/null）
+      - /etc/passwd:/etc/passwd:ro # 主機使用者的名稱與家目錄（Chromium、git 會查）
+      - /etc/group:/etc/group:ro
+      # docker.sock＝等同主機 root；只為 postiz.query 的 docker exec postiz-postgres。容器內的程式本來就是 repo 自己的程式、
+      # 以主機使用者身分跑（systemd 版同一個使用者也在 docker 群組），信任範圍沒變大
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ${CLAW_DOCKER_BIN:?CLAW_DOCKER_BIN}:/usr/local/bin/docker:ro
+    stop_grace_period: ${CLAW_STOP_GRACE:?CLAW_STOP_GRACE} # 比 MAMABABY_DRAIN_SEC 多 5 分鐘
+    shm_size: 1gb

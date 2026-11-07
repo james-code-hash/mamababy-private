@@ -1,0 +1,191 @@
+{
+ "_doc": "《帕帕貝貝家》動作庫。gestures＝零件動作（分鏡 cast.gesture／head.gesture），整個用資料描述，engine 照 steps 產生 GSAP tween，加新動作不用改程式。actions＝整隻角色的位移（cast.action）、ambient＝程式自動加的（呼吸、歪頭、甩尾、眨眼）、face＝表情與視線、hand_motions＝INSERT 手部特寫的動法；這幾類由 engine 實作，參數在這裡。格式說明見 skills/papa-home-motion/references/adding-motions.md。",
+ "gestures": {
+  "shrug": {
+   "label": "聳肩", "desc": "頭歪、兩手（前腳）往外抬，攤手", "status": "approved",
+   "species": ["human", "quadruped", "baby", "child"], "head_shot": false, "needs": ["head"], "length": 1.2,
+   "steps": [
+    {"part": "head", "at": 0, "to": {"rotation": "7*dir", "yPercent": -1, "duration": 0.18, "ease": "back.out(2)"}},
+    {"part": "arm_a", "at": 0.06, "to": {"rotation": 38, "yPercent": -2.2, "duration": 0.22, "ease": "back.out(2)"}},
+    {"part": "arm_b", "at": 0.1, "to": {"rotation": -38, "yPercent": -2.2, "duration": 0.22, "ease": "back.out(2)"}},
+    {"part": "body", "at": 0.05, "to": {"scaleX": 0.98, "duration": 0.12, "ease": "power2.out"}},
+    {"part": "head", "at": 0.75, "back": 0.35},
+    {"part": "arm_a", "at": 0.8, "back": 0.35},
+    {"part": "arm_b", "at": 0.84, "back": 0.35},
+    {"part": "body", "at": 0.8, "to": {"scaleX": 1, "duration": 0.3}}
+   ]
+  },
+  "point": {
+   "label": "指", "desc": "靠目標那隻手抬起指向 look_at 的目標", "status": "approved",
+   "species": ["quadruped", "baby", "child"], "head_shot": false, "needs": ["head", "arm_lead"], "length": 1.45,
+   "steps": [
+    {"part": "head", "at": 0, "to": {"rotation": "-4*dir", "duration": 0.2, "ease": "power2.out"}},
+    {"part": "arm_lead", "at": 0.06, "to": {"rotation": "-75*dir", "duration": 0.26, "ease": "back.out(1.6)"}},
+    {"part": "head", "at": 1.1, "back": 0.3},
+    {"part": "arm_lead", "at": 1.15, "back": 0.3}
+   ]
+  },
+  "reach": {
+   "label": "伸手", "desc": "兩手往目標伸、身體前傾，1 秒後收回", "status": "approved",
+   "species": ["human", "quadruped", "baby", "child"], "head_shot": false, "needs": ["head"], "length": 1.4,
+   "steps": [
+    {"part": "head", "at": 0.08, "to": {"rotation": "5*dir", "xPercent": "1.2*dir", "duration": 0.25, "ease": "power2.out"}},
+    {"part": "body", "at": 0, "to": {"rotation": "7*dir", "duration": 0.3, "ease": "power2.out"}},
+    {"part": "arm_a", "at": 0.1, "to": {"rotation": "-55*dir", "duration": 0.28, "ease": "back.out(1.5)"}},
+    {"part": "arm_b", "at": 0.16, "to": {"rotation": "-45*dir", "duration": 0.28, "ease": "back.out(1.5)"}},
+    {"part": "head", "at": 1.0, "back": 0.3},
+    {"part": "body", "at": 1.05, "back": 0.35},
+    {"part": "arm_a", "at": 1.0, "back": 0.3},
+    {"part": "arm_b", "at": 1.05, "back": 0.3}
+   ]
+  },
+  "lean": {
+   "label": "靠過去", "desc": "身體往目標傾、頭跟著，維持到鏡尾（配閉眼＝舒服）", "status": "approved",
+   "species": ["human", "quadruped", "baby", "child"], "head_shot": false, "needs": ["head"], "length": 0.35, "holds": true,
+   "steps": [
+    {"part": "head", "at": 0.08, "to": {"rotation": "5*dir", "xPercent": "1.2*dir", "duration": 0.25, "ease": "power2.out"}},
+    {"part": "body", "at": 0, "to": {"rotation": "7*dir", "duration": 0.3, "ease": "power2.out"}}
+   ]
+  },
+  "gag": {
+   "label": "乾嘔", "desc": "頭往前抽兩下、身體擠壓、閉眼", "status": "approved",
+   "species": ["human", "quadruped", "baby", "child"], "head_shot": true, "needs": ["head"], "length": 0.72,
+   "steps": [
+    {"repeat": 2, "every": 0.26, "at": 0, "steps": [
+     {"part": "head", "at": 0, "to": {"yPercent": 1.0, "scaleY": 0.96, "duration": 0.09, "ease": "power2.in"}},
+     {"part": "head", "at": 0.09, "to": {"xPercent": "1.8*dir", "yPercent": -0.6, "rotation": "9*dir", "duration": 0.07, "ease": "power3.out"}},
+     {"part": "head", "at": 0.16, "to": {"xPercent": 0, "yPercent": 0, "rotation": 0, "scaleY": 1, "duration": 0.12, "ease": "power2.inOut"}},
+     {"part": "body", "at": 0.07, "to": {"scaleX": 1.07, "duration": 0.08, "yoyo": true, "repeat": 1, "ease": "power2.out"}}
+    ]},
+    {"part": "lids", "at": -0.02, "from": {"scaleY": 0}, "to": {"scaleY": 1, "duration": 0.06, "immediateRender": false}},
+    {"part": "lids", "at": 0.62, "to": {"scaleY": 0, "duration": 0.1}}
+   ]
+  },
+  "sniff": {
+   "label": "聞", "desc": "頭湊向目標點三下", "status": "approved",
+   "species": ["human", "quadruped", "baby", "child"], "head_shot": true, "needs": ["head"], "length": 1.25,
+   "steps": [
+    {"part": "head", "at": 0, "to": {"xPercent": "1.2*dir", "yPercent": 0.8, "rotation": "6*dir", "duration": 0.22, "ease": "power2.out"}},
+    {"repeat": 3, "every": 0.17, "at": 0.3, "steps": [
+     {"part": "head", "at": 0, "to": {"yPercent": "+=0.5", "duration": 0.07, "yoyo": true, "repeat": 1, "ease": "sine.inOut"}}
+    ]},
+    {"part": "head", "at": 0.95, "back": 0.3}
+   ]
+  },
+  "nod": {
+   "label": "點頭", "desc": "點頭兩下（同意、好）", "status": "approved",
+   "species": ["human", "quadruped", "baby", "child"], "head_shot": true, "needs": ["head"], "length": 0.64,
+   "steps": [
+    {"repeat": 2, "every": 0.36, "at": 0, "steps": [
+     {"part": "head", "at": 0, "to": {"yPercent": 1.2, "rotation": 3, "duration": 0.14, "yoyo": true, "repeat": 1, "ease": "power2.inOut"}}
+    ]}
+   ]
+  },
+  "shake": {
+   "label": "搖頭", "desc": "搖頭三下（不要、不對）", "status": "approved",
+   "species": ["human", "quadruped", "baby", "child"], "head_shot": true, "needs": ["head"], "length": 0.52,
+   "steps": [
+    {"repeat": 3, "every": 0.12, "at": 0, "steps": [
+     {"part": "head", "at": 0, "to": {"xPercent": "1.3*alt", "rotation": "3*alt", "duration": 0.11, "ease": "sine.inOut"}}
+    ]},
+    {"part": "head", "at": 0.38, "back": 0.14}
+   ]
+  },
+  "wave": {
+   "label": "揮手", "desc": "靠方向那隻手舉高左右揮三下（打招呼、叫人過來）", "status": "draft",
+   "species": ["human", "quadruped", "baby", "child"], "head_shot": false, "needs": ["head", "arm_lead"], "length": 1.3,
+   "steps": [
+    {"part": "arm_lead", "at": 0, "to": {"rotation": "-110*dir", "yPercent": -1.5, "duration": 0.22, "ease": "back.out(1.6)"}},
+    {"part": "head", "at": 0.05, "to": {"rotation": "4*dir", "duration": 0.2, "ease": "power2.out"}},
+    {"repeat": 3, "every": 0.24, "at": 0.24, "steps": [
+     {"part": "arm_lead", "at": 0, "to": {"rotation": "-132*dir", "duration": 0.12, "yoyo": true, "repeat": 1, "ease": "sine.inOut"}}
+    ]},
+    {"part": "arm_lead", "at": 1.0, "back": 0.3},
+    {"part": "head", "at": 1.05, "back": 0.3}
+   ]
+  },
+  "cheer": {
+   "label": "歡呼", "desc": "兩手（前腳）舉高、整隻往上彈一下（成功了、好開心）", "status": "draft",
+   "species": ["quadruped", "baby", "child"], "head_shot": false, "needs": ["head"], "length": 1.35,
+   "steps": [
+    {"part": "body", "at": 0, "to": {"y": -36, "duration": 0.16, "ease": "power2.out", "yoyo": true, "repeat": 1}},
+    {"part": "arm_a", "at": 0.02, "to": {"rotation": 120, "yPercent": -2.5, "duration": 0.22, "ease": "back.out(2)"}},
+    {"part": "arm_b", "at": 0.06, "to": {"rotation": -120, "yPercent": -2.5, "duration": 0.22, "ease": "back.out(2)"}},
+    {"part": "head", "at": 0.04, "to": {"yPercent": -1.2, "duration": 0.18, "ease": "back.out(2)"}},
+    {"part": "head", "at": 1.0, "back": 0.3},
+    {"part": "arm_a", "at": 1.0, "back": 0.35},
+    {"part": "arm_b", "at": 1.04, "back": 0.35}
+   ]
+  },
+  "tilt": {
+   "label": "歪頭", "desc": "頭往一邊歪、停一下再回來（疑惑、好奇、聽不懂）", "status": "draft",
+   "species": ["human", "quadruped", "baby", "child"], "head_shot": true, "needs": ["head"], "length": 1.75,
+   "steps": [
+    {"part": "head", "at": 0, "to": {"rotation": "12*dir", "xPercent": "0.6*dir", "duration": 0.3, "ease": "back.out(1.8)"}},
+    {"part": "head", "at": 1.4, "back": 0.35}
+   ]
+  },
+  "startle": {
+   "label": "嚇一跳", "desc": "整隻往上彈、頭往後縮、兩手張開，然後落回來（被嚇到、出事了）", "status": "draft",
+   "species": ["human", "quadruped", "baby", "child"], "head_shot": true, "needs": ["head"], "length": 0.9,
+   "steps": [
+    {"part": "body", "at": 0, "to": {"y": -48, "duration": 0.12, "ease": "power3.out"}},
+    {"part": "body", "at": 0.12, "to": {"y": 0, "duration": 0.28, "ease": "bounce.out"}},
+    {"part": "head", "at": 0, "to": {"rotation": "-8*dir", "yPercent": -1.6, "duration": 0.1, "ease": "power3.out"}},
+    {"part": "arm_a", "at": 0.02, "to": {"rotation": 48, "duration": 0.12, "ease": "power3.out"}},
+    {"part": "arm_b", "at": 0.04, "to": {"rotation": -48, "duration": 0.12, "ease": "power3.out"}},
+    {"part": "head", "at": 0.5, "back": 0.35},
+    {"part": "arm_a", "at": 0.55, "back": 0.3},
+    {"part": "arm_b", "at": 0.58, "back": 0.3}
+   ]
+  },
+  "sigh": {
+   "label": "低頭嘆氣", "desc": "頭慢慢往下垂、手跟著垂，停一下再抬起來（無奈、又來了）", "status": "draft",
+   "species": ["human", "quadruped", "baby", "child"], "head_shot": true, "needs": ["head"], "length": 1.8,
+   "steps": [
+    {"part": "head", "at": 0, "to": {"yPercent": 1.6, "rotation": "-5*dir", "duration": 0.5, "ease": "sine.inOut"}},
+    {"part": "arm_a", "at": 0.05, "to": {"rotation": -6, "duration": 0.5, "ease": "sine.inOut"}},
+    {"part": "arm_b", "at": 0.08, "to": {"rotation": 6, "duration": 0.5, "ease": "sine.inOut"}},
+    {"part": "head", "at": 1.3, "back": 0.5},
+    {"part": "arm_a", "at": 1.3, "back": 0.45},
+    {"part": "arm_b", "at": 1.33, "back": 0.45}
+   ]
+  },
+  "wag_fast": {
+   "label": "甩尾加速", "desc": "尾巴快速甩十下（超興奮、看到好東西）", "status": "draft",
+   "species": ["quadruped"], "head_shot": false, "needs": ["tail"], "length": 0.9,
+   "steps": [
+    {"part": "tail", "at": 0, "to": {"rotation": 22, "duration": 0.09, "yoyo": true, "repeat": 9, "ease": "sine.inOut"}}
+   ]
+  }
+ },
+ "actions": {
+  "hop": {"label": "蹦跳", "desc": "整鏡上下彈跳（TRACK 有 move_to 時自動加）", "status": "approved",
+          "species": ["human", "quadruped", "baby", "child"], "params": {"period": 0.26, "height": 38}},
+  "pop_in": {"label": "彈出", "desc": "從下面彈進畫面（壓扁→回彈），at 秒開始", "status": "approved",
+             "species": ["human", "quadruped", "baby", "child"], "params": {"default_at": 0.15, "from_y": 220, "squash": 0.7, "duration": 0.45}},
+  "dive": {"label": "撲", "desc": "拋物線撲過去（dive_dx 世界 px，預設 -250），at 秒起跳、0.6 秒落地", "status": "approved",
+           "species": ["human", "quadruped", "baby", "child"], "params": {"default_dx": -250, "rise": 130, "land": 90, "duration": 0.6}}
+ },
+ "movement": {
+  "move_to": {"label": "走位", "desc": "從 spot／x 等速移到另一個站位名或 x（move_dur 秒，預設整鏡）；TRACK 必用"},
+  "show": {"label": "進出場", "desc": "show:[t0, t1]：t0 秒出現、t1 秒消失；換姿勢＝同一角色兩筆 cast，前一筆的 t1＝下一筆的 t0"},
+  "flip": {"label": "轉向", "desc": "flip:true 左右鏡像（面向另一邊）；動作方向跟著反過來"}
+ },
+ "ambient": {
+  "breathe": {"label": "呼吸", "desc": "身體上下微縮放，每個角色每一鏡自動", "params": {"scale": 1.015, "period": 1.2}},
+  "idle": {"label": "歪頭待機", "desc": "每 3 秒左右小幅歪頭，自動", "params": {"angle": 2.2, "angle_back": -1.8, "every": 3.0}},
+  "wag": {"label": "甩尾", "desc": "有尾巴的姿勢整鏡甩尾，週期看角色（species.json tail_wag_period）", "params": {"angle": 12}},
+  "blink": {"label": "眨眼", "desc": "頭像鏡的臉約每 2.4 秒眨一次，自動；eyes: closed 改整鏡閉眼"}
+ },
+ "face": {
+  "take": {"label": "換表情", "desc": "mood_to＋mood_at：預備下沉→壓扁→換新臉→回彈，身體慢一拍", "fields": ["mood", "mood_to", "mood_at"]},
+  "look": {"label": "看向", "desc": "look_at（camera／同鏡角色名／[x, y]）＋look_at_at：頭轉過去", "fields": ["look_at", "look_at_at"]},
+  "talk": {"label": "說話", "desc": "mouth: talk：台詞期間場景裡的頭輕點、頭像鏡嘴巴貼片開合", "fields": ["mouth"]},
+  "eyes": {"label": "閉眼", "desc": "eyes: closed：整鏡換成這個角色的閉眼表情（species.json closed_eyes）", "fields": ["eyes"]}
+ },
+ "hand_motions": {
+  "stroke": {"label": "梳", "desc": "INSERT 手部特寫：圖不動、慢推，梳子頭每 0.6 秒刷出兩團毛"},
+  "sweep": {"label": "掃", "desc": "INSERT 手部特寫：左右來回掃（吸地）"}
+ }
+}

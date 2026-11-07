@@ -1,0 +1,58 @@
+{
+ "_doc": "物種骨架：每個物種有哪些零件角色（role → rig.json parts 的名字）、有沒有臉與尾巴。動作庫（motions.json）只用 role 名，不用零件檔名；新角色只要掛到某個物種、rig.json 拆好同名零件，就能用這個物種的所有動作。",
+ "roles": {
+  "body": "整隻角色的容器（身體＋四肢＋頭一起動；跳、傾身、壓扁用這個）",
+  "head": "頭（含姿勢表情頭；轉頭、點頭、乾嘔用這個）",
+  "arm_a": "第一隻手／前腳（rig part front）",
+  "arm_b": "第二隻手／前腳（rig part front2；有些姿勢沒有，例如蹲著、抱寶寶）",
+  "arm_lead": "朝動作方向的那隻手：方向向右用 arm_b，向左用 arm_a，缺的那隻就用另一隻",
+  "legs": "後腳／腿（rig part hind，目前只跟著身體動）",
+  "tail": "尾巴（rig 的 tail 圖，有 tail_pivot）",
+  "lids": "眼皮或眨眼貼片（頭像鏡與有表情的頭才有）"
+ },
+ "species": {
+  "human": {
+   "label": "大人（兩腳）",
+   "members": ["dad", "mom"],
+   "face": false,
+   "tail": false,
+   "parts": {"body": "body", "head": "head", "arm_a": "front", "arm_b": "front2", "legs": "hind"},
+   "note": "不畫臉：沒有表情、嘴、眼皮，演戲全靠頭、手、身體；mood／mouth／eyes 不能寫。"
+  },
+  "quadruped": {
+   "label": "四腳（貓、狗）",
+   "members": ["papa", "beibei"],
+   "face": true,
+   "tail": true,
+   "parts": {"body": "body", "head": "head", "arm_a": "front", "arm_b": "front2", "legs": "hind", "tail": "tail"},
+   "note": "前腳當手用（聳肩、指、伸手都抬前腳）；每個姿勢能換的表情不一樣（貝貝 hide 頭埋著，完全不能換臉），看 characters.md。"
+  },
+  "child": {
+   "label": "小孩（兩腳、有臉）",
+   "members": ["sister", "brother"],
+   "face": true,
+   "tail": false,
+   "parts": {"body": "body", "head": "head", "arm_a": "front", "arm_b": "front2", "legs": "hind"},
+   "head_shift": 0.3,
+   "arm_scale": 0.5,
+   "note": "頭的平移只做 30%、手的旋轉只做一半（圓頭配短脖子，頭一平移就露縫；短袖手轉太開肩膀接縫會露出來）。姊姊、弟弟：正面或側面、有表情，不說話（只有帕帕說話）。手舉高、指東西都看得到（大人是背影才不能用 point／cheer）。"
+  },
+  "baby": {
+   "label": "寶寶（已退役，只留給封存的舊第 1 集）",
+   "members": ["baby"],
+   "face": true,
+   "tail": false,
+   "parts": {"body": "body", "head": "head", "arm_a": "front", "arm_b": "front2", "legs": "hind"},
+   "note": "不說話；手短，大動作（歡呼、伸手）幅度跟大人一樣但看起來比較小。"
+  }
+ },
+ "characters": {
+  "papa": {"species": "quadruped", "label": "帕帕（橘貓，唯一說話的角色）", "closed_eyes": "soft", "tail_wag_period": 0.7},
+  "beibei": {"species": "quadruped", "label": "貝貝（狗）", "closed_eyes": "happy", "tail_wag_period": 0.42},
+  "dad": {"species": "human", "label": "爸爸（不畫臉）"},
+  "mom": {"species": "human", "label": "媽媽（不畫臉）"},
+  "sister": {"species": "child", "label": "姊姊（國小）"},
+  "brother": {"species": "child", "label": "弟弟（2 歲）", "closed_eyes": "laugh"},
+  "baby": {"species": "baby", "label": "寶寶（已退役）", "closed_eyes": "sleep", "retired": true}
+ }
+}
