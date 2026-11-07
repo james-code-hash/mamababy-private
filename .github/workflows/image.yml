@@ -1,0 +1,71 @@
+# 疊出 James 的映像檔：money-erp-v2 推出新映像檔時（v2 image.yml 發 repository_dispatch base-image，帶 sha），
+# 或這個 repo 的 main 有變動、手動觸發時。只出 linux/arm64，推私人 GHCR
+# ghcr.io/james-code-hash/mamababy-private-ops:<v2 sha>-<本 repo sha> 與 :main。
+name: Image
+
+on:
+  repository_dispatch:
+    types: [base-image]
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      base_sha:
+        description: money-erp-v2 映像檔的 commit sha（空＝用 :main）
+        default: ""
+
+permissions:
+  contents: read
+  packages: write
+
+concurrency:
+  group: image
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ${{ fromJSON(vars.RUNS_ON || '["self-hosted","claw-arm-1"]') }}
+    timeout-minutes: 60
+    steps:
+      - id: ref
+        env:
+          DISPATCH_SHA: ${{ github.event.client_payload.sha }}
+          INPUT_SHA: ${{ inputs.base_sha }}
+        run: |
+          base_sha="${DISPATCH_SHA:-$INPUT_SHA}"
+          echo "base=ghcr.io/shopee-bank/money-erp-v2-ops:${base_sha:-main}" >> "$GITHUB_OUTPUT"
+          echo "tag=${base_sha:-main}-${GITHUB_SHA::12}" >> "$GITHUB_OUTPUT"
+          echo "image=ghcr.io/james-code-hash/mamababy-private-ops" >> "$GITHUB_OUTPUT"
+          if docker info >/dev/null 2>&1; then echo "docker=docker" >> "$GITHUB_OUTPUT"; else echo "docker=sudo -n docker" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - name: Build
+        env:
+          DOCKER: ${{ steps.ref.outputs.docker }}
+          BASE: ${{ steps.ref.outputs.base }}
+          IMAGE: ${{ steps.ref.outputs.image }}
+          TAG: ${{ steps.ref.outputs.tag }}
+        run: |
+          $DOCKER pull --platform linux/arm64 "$BASE"
+          DOCKER_BUILDKIT=1 $DOCKER build --platform linux/arm64 --build-arg BASE="$BASE" -t "$IMAGE:$TAG" -t "$IMAGE:main" .
+      - name: Smoke test
+        env:
+          DOCKER: ${{ steps.ref.outputs.docker }}
+          IMAGE: ${{ steps.ref.outputs.image }}
+          TAG: ${{ steps.ref.outputs.tag }}
+        run: |
+          $DOCKER run --rm "$IMAGE:$TAG" main.py papa --help >/dev/null
+          $DOCKER run --rm "$IMAGE:$TAG" main.py papa menu >/dev/null
+      - name: Push
+        env:
+          DOCKER: ${{ steps.ref.outputs.docker }}
+          IMAGE: ${{ steps.ref.outputs.image }}
+          TAG: ${{ steps.ref.outputs.tag }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACTOR: ${{ github.actor }}
+        run: |
+          cfg="$(mktemp -d)"
+          trap 'rm -rf "$cfg"' EXIT
+          echo "$TOKEN" | $DOCKER --config "$cfg" login ghcr.io -u "$ACTOR" --password-stdin
+          $DOCKER --config "$cfg" push "$IMAGE:$TAG"
+          $DOCKER --config "$cfg" push "$IMAGE:main"
+          echo "### 已推送 \`$IMAGE:$TAG\`" >> "$GITHUB_STEP_SUMMARY"

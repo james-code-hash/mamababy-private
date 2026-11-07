@@ -1,0 +1,1003 @@
+{
+ "canvas": [
+  1024,
+  1024
+ ],
+ "foot": [
+  512,
+  960
+ ],
+ "poses": {
+  "sit": {
+   "file": "pose_sit.webp",
+   "world_height": 32,
+   "expression": "neutral",
+   "bbox": [
+    124,
+    60,
+    899,
+    960
+   ],
+   "tail": "tail_sit.webp",
+   "tail_pivot": [
+    685,
+    848
+   ],
+   "parts": {
+    "body": {
+     "file": "p_sit_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 1,
+      "dy": 0,
+      "inside": 0.991,
+      "outside_diff": 15.9,
+      "iou": 0.998,
+      "remnant": {
+       "front": 0.399,
+       "front2": 0.433,
+       "hind": 0.331
+      },
+      "remnant_before": {
+       "front": 0.798,
+       "front2": 0.85,
+       "hind": 0.998
+      }
+     }
+    },
+    "head": {
+     "file": "p_sit_head.webp",
+     "pivot": [
+      407,
+      573
+     ],
+     "bbox": [
+      172,
+      61,
+      643,
+      643
+     ],
+     "avatar_scale": 0.6992,
+     "expressions": {
+      "unimpressed": {
+       "file": "p_sit_head_unimpressed.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 1.0,
+        "iou": 0.994,
+        "body_diff": 6.3,
+        "head_changed": 11.8,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.998
+       }
+      },
+      "surprised": {
+       "file": "p_sit_head_surprised.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 1.0,
+        "iou": 0.994,
+        "body_diff": 6.4,
+        "head_changed": 12.2,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.998
+       }
+      },
+      "smug": {
+       "file": "p_sit_head_smug.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 1.0,
+        "iou": 0.994,
+        "body_diff": 6.2,
+        "head_changed": 12.3,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.996
+       }
+      },
+      "soft": {
+       "file": "p_sit_head_soft.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 1.0,
+        "iou": 0.994,
+        "body_diff": 6.2,
+        "head_changed": 11.3,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.998
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_sit_front.webp",
+     "pivot": [
+      293,
+      694
+     ],
+     "bbox": [
+      205,
+      648,
+      382,
+      960
+     ]
+    },
+    "front2": {
+     "file": "p_sit_front2.webp",
+     "pivot": [
+      534,
+      690
+     ],
+     "bbox": [
+      446,
+      643,
+      622,
+      960
+     ]
+    },
+    "hind": {
+     "file": "p_sit_hind.webp",
+     "pivot": [
+      416,
+      691
+     ],
+     "bbox": [
+      124,
+      648,
+      708,
+      939
+     ]
+    }
+   }
+  },
+  "stand": {
+   "file": "pose_stand.webp",
+   "world_height": 42,
+   "expression": "smug",
+   "bbox": [
+    133,
+    60,
+    890,
+    960
+   ],
+   "tail": "tail_stand.webp",
+   "tail_pivot": [
+    658,
+    767
+   ],
+   "parts": {
+    "body": {
+     "file": "p_stand_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 1.0,
+      "outside_diff": 0.5,
+      "iou": 0.9981,
+      "remnant": {
+       "front": 0.009,
+       "front2": 0.003,
+       "hind": 0.055
+      },
+      "remnant_before": {
+       "front": 0.994,
+       "front2": 0.994,
+       "hind": 0.996
+      }
+     }
+    },
+    "head": {
+     "file": "p_stand_head.webp",
+     "pivot": [
+      429,
+      536
+     ],
+     "bbox": [
+      206,
+      60,
+      653,
+      601
+     ],
+     "avatar_scale": 0.6492,
+     "expressions": {
+      "neutral": {
+       "file": "p_stand_head_neutral.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": 1,
+        "inside": 1.0,
+        "iou": 0.993,
+        "body_diff": 5.6,
+        "head_changed": 11.7,
+        "center": [
+         0,
+         1
+        ],
+        "neck": 0,
+        "w_ratio": 0.996
+       }
+      },
+      "unimpressed": {
+       "file": "p_stand_head_unimpressed.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 1.0,
+        "iou": 0.993,
+        "body_diff": 5.7,
+        "head_changed": 10.6,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.996
+       }
+      },
+      "surprised": {
+       "file": "p_stand_head_surprised.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 1.0,
+        "iou": 0.993,
+        "body_diff": 5.7,
+        "head_changed": 14.0,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.996
+       }
+      },
+      "soft": {
+       "file": "p_stand_head_soft.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 1.0,
+        "iou": 0.993,
+        "body_diff": 5.6,
+        "head_changed": 10.7,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.996
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_stand_front.webp",
+     "pivot": [
+      202,
+      451
+     ],
+     "bbox": [
+      133,
+      408,
+      272,
+      700
+     ]
+    },
+    "front2": {
+     "file": "p_stand_front2.webp",
+     "pivot": [
+      664,
+      447
+     ],
+     "bbox": [
+      595,
+      403,
+      733,
+      697
+     ]
+    },
+    "hind": {
+     "file": "p_stand_hind.webp",
+     "pivot": [
+      435,
+      759
+     ],
+     "bbox": [
+      205,
+      724,
+      666,
+      959
+     ]
+    }
+   }
+  },
+  "lie": {
+   "file": "pose_lie.webp",
+   "world_height": 22,
+   "expression": "unimpressed",
+   "bbox": [
+    22,
+    192,
+    1002,
+    960
+   ],
+   "tail": "tail_lie.webp",
+   "tail_pivot": [
+    815,
+    733
+   ],
+   "parts": {
+    "body": {
+     "file": "p_lie_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 0.997,
+      "outside_diff": 13.2,
+      "iou": 0.9954,
+      "remnant": {
+       "front": 0.11,
+       "front2": 0.272,
+       "hind": 0.421
+      },
+      "remnant_before": {
+       "front": 0.236,
+       "front2": 0.248,
+       "hind": 0.847
+      }
+     }
+    },
+    "head": {
+     "file": "p_lie_head.webp",
+     "pivot": [
+      289,
+      722
+     ],
+     "bbox": [
+      26,
+      194,
+      601,
+      795
+     ],
+     "avatar_scale": 0.7663,
+     "expressions": {
+      "neutral": {
+       "file": "p_lie_head_neutral.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": 0,
+        "inside": 1.0,
+        "iou": 0.995,
+        "body_diff": 4.9,
+        "head_changed": 7.3,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.998
+       }
+      },
+      "surprised": {
+       "file": "p_lie_head_surprised.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": 0,
+        "inside": 1.0,
+        "iou": 0.995,
+        "body_diff": 4.7,
+        "head_changed": 9.5,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.998
+       }
+      },
+      "smug": {
+       "file": "p_lie_head_smug.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": 0,
+        "inside": 1.0,
+        "iou": 0.995,
+        "body_diff": 4.9,
+        "head_changed": 7.0,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.998
+       }
+      },
+      "soft": {
+       "file": "p_lie_head_soft.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": 0,
+        "inside": 1.0,
+        "iou": 0.995,
+        "body_diff": 5.0,
+        "head_changed": 7.3,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.998
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_lie_front.webp",
+     "pivot": [
+      147,
+      732
+     ],
+     "bbox": [
+      30,
+      699,
+      265,
+      920
+     ]
+    },
+    "front2": {
+     "file": "p_lie_front2.webp",
+     "pivot": [
+      431,
+      779
+     ],
+     "bbox": [
+      278,
+      753,
+      585,
+      927
+     ]
+    },
+    "hind": {
+     "file": "p_lie_hind.webp",
+     "pivot": [
+      718,
+      653
+     ],
+     "bbox": [
+      615,
+      613,
+      821,
+      880
+     ]
+    }
+   }
+  },
+  "sign": {
+   "file": "pose_sign.webp",
+   "world_height": 42,
+   "expression": "neutral",
+   "bbox": [
+    93,
+    60,
+    931,
+    960
+   ],
+   "tail": "tail_sign.webp",
+   "tail_pivot": [
+    689,
+    781
+   ],
+   "parts": {
+    "body": {
+     "file": "p_sign_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 1.0,
+      "outside_diff": 6.0,
+      "iou": 0.9978,
+      "remnant": {
+       "front": 0.287,
+       "hind": 0.095
+      },
+      "remnant_before": {
+       "front": 0.975,
+       "hind": 0.346
+      }
+     }
+    },
+    "head": {
+     "file": "p_sign_head.webp",
+     "pivot": [
+      467,
+      429
+     ],
+     "bbox": [
+      267,
+      61,
+      668,
+      480
+     ],
+     "avatar_scale": 0.5034,
+     "expressions": {
+      "unimpressed": {
+       "file": "p_sign_head_unimpressed.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.993,
+        "body_diff": 5.1,
+        "head_changed": 13.4,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.995
+       }
+      },
+      "surprised": {
+       "file": "p_sign_head_surprised.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": 1,
+        "inside": 0.999,
+        "iou": 0.993,
+        "body_diff": 4.8,
+        "head_changed": 15.5,
+        "center": [
+         0,
+         1
+        ],
+        "neck": 0,
+        "w_ratio": 0.995
+       }
+      },
+      "smug": {
+       "file": "p_sign_head_smug.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": 1,
+        "inside": 0.999,
+        "iou": 0.993,
+        "body_diff": 4.9,
+        "head_changed": 13.7,
+        "center": [
+         0,
+         1
+        ],
+        "neck": 0,
+        "w_ratio": 0.995
+       }
+      },
+      "soft": {
+       "file": "p_sign_head_soft.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.993,
+        "body_diff": 4.7,
+        "head_changed": 13.6,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.995
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_sign_front.webp",
+     "pivot": [
+      450,
+      426
+     ],
+     "bbox": [
+      93,
+      371,
+      807,
+      739
+     ]
+    },
+    "hind": {
+     "file": "p_sign_hind.webp",
+     "pivot": [
+      473,
+      768
+     ],
+     "bbox": [
+      253,
+      735,
+      694,
+      960
+     ]
+    }
+   }
+  },
+  "walk": {
+   "file": "pose_walk.webp",
+   "world_height": 28,
+   "expression": "neutral",
+   "bbox": [
+    22,
+    155,
+    1002,
+    960
+   ],
+   "tail": "tail_walk.webp",
+   "tail_pivot": [
+    221,
+    497
+   ],
+   "parts": {
+    "body": {
+     "file": "p_walk_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 0.997,
+      "outside_diff": 11.2,
+      "iou": 0.9974,
+      "remnant": {
+       "front": 0.273,
+       "front2": 0.0,
+       "hind": 0.283
+      },
+      "remnant_before": {
+       "front": 0.476,
+       "front2": 0.665,
+       "hind": 0.758
+      }
+     }
+    },
+    "head": {
+     "file": "p_walk_head.webp",
+     "pivot": [
+      809,
+      655
+     ],
+     "bbox": [
+      563,
+      183,
+      1001,
+      720
+     ],
+     "expressions": {
+      "unimpressed": {
+       "file": "p_walk_head_unimpressed.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 1.0,
+        "iou": 0.992,
+        "body_diff": 6.7,
+        "head_changed": 10.0,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.993
+       }
+      },
+      "surprised": {
+       "file": "p_walk_head_surprised.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.997,
+        "iou": 0.991,
+        "body_diff": 6.9,
+        "head_changed": 11.8,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.993
+       }
+      },
+      "smug": {
+       "file": "p_walk_head_smug.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.992,
+        "body_diff": 6.8,
+        "head_changed": 11.1,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.993
+       }
+      },
+      "soft": {
+       "file": "p_walk_head_soft.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 1.0,
+        "iou": 0.992,
+        "body_diff": 6.7,
+        "head_changed": 10.3,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.993
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_walk_front.webp",
+     "pivot": [
+      671,
+      736
+     ],
+     "bbox": [
+      590,
+      697,
+      752,
+      959
+     ]
+    },
+    "front2": {
+     "file": "p_walk_front2.webp",
+     "pivot": [
+      835,
+      770
+     ],
+     "bbox": [
+      739,
+      744,
+      931,
+      922
+     ]
+    },
+    "hind": {
+     "file": "p_walk_hind.webp",
+     "pivot": [
+      308,
+      699
+     ],
+     "bbox": [
+      135,
+      656,
+      481,
+      943
+     ]
+    }
+   }
+  }
+ },
+ "heads": {
+  "neutral": {
+   "file": "head_neutral.webp",
+   "neck": [
+    512,
+    962
+   ],
+   "eyes": [
+    {
+     "x": 300,
+     "y": 387,
+     "w": 120,
+     "h": 154,
+     "color": "#f6d7aa"
+    },
+    {
+     "x": 594,
+     "y": 377,
+     "w": 132,
+     "h": 166,
+     "color": "#f5d8ac"
+    }
+   ],
+   "mouth": {
+    "file": "mouth_neutral.webp",
+    "bbox": [
+     427,
+     508,
+     604,
+     691
+    ]
+   },
+   "blink": "blink_neutral.webp",
+   "blink_qa": {
+    "scale": 1.0,
+    "dx": 0,
+    "dy": 1,
+    "inside": 0.999,
+    "outside_diff": 6.4,
+    "eye_changed": 60.7
+   },
+   "pupil_off": "瞳孔移動會在原位留下高光白斑，已拿掉；看向目標只轉頭"
+  },
+  "unimpressed": {
+   "file": "head_unimpressed.webp",
+   "neck": [
+    512,
+    936
+   ],
+   "eyes": [
+    {
+     "x": 252,
+     "y": 466,
+     "w": 168,
+     "h": 77,
+     "color": "#f7deb5"
+    },
+    {
+     "x": 578,
+     "y": 458,
+     "w": 180,
+     "h": 77,
+     "color": "#f6d9ac"
+    }
+   ],
+   "mouth": {
+    "file": "mouth_unimpressed.webp",
+    "bbox": [
+     454,
+     608,
+     570,
+     702
+    ]
+   },
+   "blink": "blink_unimpressed.webp",
+   "blink_qa": {
+    "scale": 1.0,
+    "dx": 0,
+    "dy": 1,
+    "inside": 1.0,
+    "outside_diff": 6.4,
+    "eye_changed": 62.8
+   }
+  },
+  "surprised": {
+   "file": "head_surprised.webp",
+   "neck": [
+    512,
+    962
+   ],
+   "eyes": [
+    {
+     "x": 336,
+     "y": 340,
+     "w": 120,
+     "h": 110,
+     "color": "#f6d7aa"
+    },
+    {
+     "x": 594,
+     "y": 340,
+     "w": 120,
+     "h": 110,
+     "color": "#f6d7aa"
+    }
+   ],
+   "blink": "blink_surprised.webp",
+   "blink_qa": {
+    "scale": 1.0,
+    "dx": -1,
+    "dy": 0,
+    "inside": 0.999,
+    "outside_diff": 6.4,
+    "eye_changed": 49.8
+   },
+   "pupil_off": "瞳孔移動會在原位留下高光白斑，已拿掉；看向目標只轉頭"
+  },
+  "smug": {
+   "file": "head_smug.webp",
+   "neck": [
+    512,
+    962
+   ],
+   "eyes": [
+    {
+     "x": 258,
+     "y": 407,
+     "w": 180,
+     "h": 90,
+     "color": "#f8d8a9"
+    },
+    {
+     "x": 576,
+     "y": 399,
+     "w": 192,
+     "h": 90,
+     "color": "#f7d6a7"
+    }
+   ],
+   "mouth": {
+    "file": "mouth_smug.webp",
+    "bbox": [
+     440,
+     554,
+     597,
+     627
+    ]
+   },
+   "blink": "blink_smug.webp",
+   "blink_qa": {
+    "scale": 1.0,
+    "dx": 0,
+    "dy": 0,
+    "inside": 1.0,
+    "outside_diff": 4.6,
+    "eye_changed": 47.0
+   }
+  },
+  "soft": {
+   "file": "head_soft.webp",
+   "neck": [
+    512,
+    948
+   ],
+   "eyes": null,
+   "mouth": {
+    "file": "mouth_soft.webp",
+    "bbox": [
+     390,
+     533,
+     646,
+     708
+    ]
+   }
+  }
+ },
+ "note": "world_height 單位 cm（場景換算比例用）；tail_pivot 為尾根（甩尾旋轉中心）；heads.*.eyes 兩眼框（畫布座標）與眼皮色，null＝閉眼表情不眨眼"
+}

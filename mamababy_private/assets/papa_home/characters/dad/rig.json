@@ -1,0 +1,416 @@
+{
+ "canvas": [
+  1024,
+  1024
+ ],
+ "foot": [
+  512,
+  960
+ ],
+ "poses": {
+  "stand": {
+   "file": "pose_stand.webp",
+   "world_height": 172,
+   "expression": null,
+   "bbox": [
+    353,
+    60,
+    671,
+    960
+   ],
+   "parts": {
+    "body": {
+     "file": "p_stand_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 1.0,
+      "outside_diff": 6.4,
+      "iou": 0.994,
+      "remnant": {
+       "front": 0.009,
+       "front2": 0.022,
+       "hind": 0.0
+      },
+      "remnant_before": {
+       "front": 0.947,
+       "front2": 0.394,
+       "hind": 0.993
+      }
+     }
+    },
+    "head": {
+     "file": "p_stand_head.webp",
+     "pivot": [
+      509,
+      209
+     ],
+     "bbox": [
+      440,
+      66,
+      580,
+      229
+     ]
+    },
+    "front": {
+     "file": "p_stand_front.webp",
+     "pivot": [
+      385,
+      336
+     ],
+     "bbox": [
+      353,
+      286,
+      417,
+      623
+     ]
+    },
+    "front2": {
+     "file": "p_stand_front2.webp",
+     "pivot": [
+      637,
+      336
+     ],
+     "bbox": [
+      605,
+      286,
+      669,
+      621
+     ]
+    },
+    "hind": {
+     "file": "p_stand_hind.webp",
+     "pivot": [
+      514,
+      621
+     ],
+     "bbox": [
+      404,
+      562,
+      625,
+      960
+     ]
+    }
+   }
+  },
+  "crouch": {
+   "file": "pose_crouch.webp",
+   "world_height": 100,
+   "expression": null,
+   "bbox": [
+    166,
+    60,
+    858,
+    960
+   ],
+   "parts": {
+    "body": {
+     "file": "p_crouch_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 0.998,
+      "outside_diff": 21.0,
+      "iou": 0.9914,
+      "remnant": {
+       "front": 0.116,
+       "hind": 0.002
+      },
+      "remnant_before": {
+       "front": 0.364,
+       "hind": 0.014
+      }
+     }
+    },
+    "head": {
+     "file": "p_crouch_head.webp",
+     "pivot": [
+      603,
+      307
+     ],
+     "bbox": [
+      480,
+      65,
+      734,
+      340
+     ]
+    },
+    "front": {
+     "file": "p_crouch_front.webp",
+     "pivot": [
+      682,
+      455
+     ],
+     "bbox": [
+      509,
+      387,
+      855,
+      843
+     ]
+    },
+    "hind": {
+     "file": "p_crouch_hind.webp",
+     "pivot": [
+      459,
+      632
+     ],
+     "bbox": [
+      203,
+      575,
+      715,
+      957
+     ]
+    }
+   }
+  },
+  "hold_baby": {
+   "file": "pose_hold_baby.webp",
+   "world_height": 172,
+   "expression": null,
+   "bbox": [
+    359,
+    60,
+    665,
+    960
+   ],
+   "parts": {
+    "body": {
+     "file": "p_hold_baby_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 0.992,
+      "outside_diff": 8.9,
+      "iou": 0.9891,
+      "remnant": {
+       "front": 0.31,
+       "hind": 0.001,
+       "head": 0.001
+      },
+      "remnant_before": {
+       "front": 0.536,
+       "hind": 0.646,
+       "head": 0.232
+      }
+     }
+    },
+    "head": {
+     "file": "p_hold_baby_head.webp",
+     "pivot": [
+      496,
+      286
+     ],
+     "bbox": [
+      390,
+      72,
+      597,
+      316
+     ]
+    },
+    "front": {
+     "file": "p_hold_baby_front.webp",
+     "pivot": [
+      422,
+      311
+     ],
+     "bbox": [
+      360,
+      285,
+      484,
+      460
+     ]
+    },
+    "hind": {
+     "file": "p_hold_baby_hind.webp",
+     "pivot": [
+      515,
+      626
+     ],
+     "bbox": [
+      406,
+      568,
+      625,
+      959
+     ]
+    }
+   }
+  },
+  "flail": {
+   "file": "pose_flail.webp",
+   "world_height": 165,
+   "expression": null,
+   "bbox": [
+    224,
+    60,
+    801,
+    960
+   ],
+   "parts": {
+    "body": {
+     "file": "p_flail_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 1.0,
+      "outside_diff": 0.5,
+      "iou": 0.9909,
+      "remnant": {
+       "front": 0.065,
+       "front2": 0.002,
+       "hind": 0.004
+      },
+      "remnant_before": {
+       "front": 0.534,
+       "front2": 0.49,
+       "hind": 0.276
+      }
+     }
+    },
+    "head": {
+     "file": "p_flail_head.webp",
+     "pivot": [
+      472,
+      247
+     ],
+     "bbox": [
+      385,
+      101,
+      562,
+      267
+     ]
+    },
+    "front": {
+     "file": "p_flail_front.webp",
+     "pivot": [
+      334,
+      162
+     ],
+     "bbox": [
+      250,
+      119,
+      418,
+      407
+     ]
+    },
+    "front2": {
+     "file": "p_flail_front2.webp",
+     "pivot": [
+      692,
+      118
+     ],
+     "bbox": [
+      625,
+      74,
+      760,
+      370
+     ]
+    },
+    "hind": {
+     "file": "p_flail_hind.webp",
+     "pivot": [
+      520,
+      606
+     ],
+     "bbox": [
+      320,
+      545,
+      721,
+      958
+     ]
+    }
+   }
+  },
+  "shrug": {
+   "file": "pose_shrug.webp",
+   "world_height": 168,
+   "expression": null,
+   "bbox": [
+    223,
+    60,
+    802,
+    960
+   ],
+   "parts": {
+    "body": {
+     "file": "p_shrug_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 1.0,
+      "outside_diff": 3.4,
+      "iou": 0.9993,
+      "remnant": {
+       "front": 0.024,
+       "front2": 0.007,
+       "hind": 0.001
+      },
+      "remnant_before": {
+       "front": 0.977,
+       "front2": 0.985,
+       "hind": 1.0
+      }
+     }
+    },
+    "head": {
+     "file": "p_shrug_head.webp",
+     "pivot": [
+      491,
+      204
+     ],
+     "bbox": [
+      412,
+      65,
+      563,
+      224
+     ]
+    },
+    "front": {
+     "file": "p_shrug_front.webp",
+     "pivot": [
+      321,
+      309
+     ],
+     "bbox": [
+      223,
+      285,
+      419,
+      451
+     ]
+    },
+    "front2": {
+     "file": "p_shrug_front2.webp",
+     "pivot": [
+      704,
+      307
+     ],
+     "bbox": [
+      607,
+      282,
+      801,
+      449
+     ]
+    },
+    "hind": {
+     "file": "p_shrug_hind.webp",
+     "pivot": [
+      515,
+      616
+     ],
+     "bbox": [
+      403,
+      556,
+      627,
+      960
+     ]
+    }
+   }
+  }
+ },
+ "heads": {},
+ "note": "world_height 單位 cm（場景換算比例用）；tail_pivot 為尾根（甩尾旋轉中心）"
+}

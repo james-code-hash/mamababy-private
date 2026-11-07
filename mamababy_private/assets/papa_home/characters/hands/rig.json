@@ -1,0 +1,29 @@
+{
+ "canvas": [
+  1024,
+  1024
+ ],
+ "note": "手部特寫：整張畫面當 INSERT 用，從畫面邊緣伸入",
+ "files": {
+  "dad_comb": "dad_comb.webp",
+  "mom_brush": "mom_brush.webp",
+  "mom_bottle": "mom_bottle.webp",
+  "mom_gauze": "mom_gauze.webp",
+  "mom_spoon": "mom_spoon.webp",
+  "dad_spoon_heap": "dad_spoon_heap.webp",
+  "dad_salt": "dad_salt.webp",
+  "dad_honey": "dad_honey.webp",
+  "mom_kid_wash": "mom_kid_wash.webp"
+ },
+ "labels": {
+  "dad_comb": "爸爸拿自己的梳子（拿錯東西）",
+  "mom_brush": "媽媽拿寵物梳梳毛",
+  "mom_bottle": "媽媽拿奶瓶",
+  "mom_gauze": "媽媽拿紗布巾",
+  "mom_spoon": "媽媽一手端小碗米糊、一手拿小湯匙只沾一點（慢慢來，正確）",
+  "dad_spoon_heap": "爸爸湯匙堆滿好幾種顏色的泥（一次加太多，錯誤）",
+  "dad_salt": "爸爸往寶寶的米糊撒鹽（加調味料，錯誤）",
+  "dad_honey": "爸爸拿蜂蜜棒往寶寶的米糊滴蜂蜜（1 歲以下不行，錯誤）",
+  "mom_kid_wash": "媽媽帶小孩洗手（摸完、梳完毛馬上洗手）"
+ }
+}

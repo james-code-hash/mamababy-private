@@ -1,0 +1,58 @@
+{
+ "size": [
+  2422,
+  1920
+ ],
+ "frame": [
+  1080,
+  1920
+ ],
+ "layers": {
+  "far": {
+   "file": "far.webp",
+   "parallax": 0.6
+  },
+  "mid": {
+   "file": "mid.webp",
+   "parallax": 1.0
+  },
+  "near": {
+   "file": "near.webp",
+   "parallax": 1.3,
+   "frame_space": true
+  }
+ },
+ "spots": {
+  "front_center": {
+   "x": 1190,
+   "y": 1820,
+   "px_per_cm": 6.0
+  },
+  "rug": {
+   "x": 1200,
+   "y": 1640,
+   "px_per_cm": 5.4
+  },
+  "crib": {
+   "x": 420,
+   "y": 1550,
+   "px_per_cm": 4.8
+  },
+  "armchair": {
+   "x": 820,
+   "y": 1380,
+   "px_per_cm": 4.0
+  },
+  "changing_table": {
+   "x": 1820,
+   "y": 1450,
+   "px_per_cm": 4.4
+  }
+ },
+ "pov": {
+  "camera_y": 1880,
+  "zoom": 1.35,
+  "note": "貓視角：鏡頭壓低、地板佔下半，邊緣暗角"
+ },
+ "note": "spots 是角色腳底座標與該深度的比例（cm→px）；初版目測值，試播集時再校"
+}

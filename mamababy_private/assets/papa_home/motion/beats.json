@@ -1,0 +1,75 @@
+{
+ "_doc": "表演套路（acting beats）：把動作庫的零件動作＋表情＋視線組成一個有名字的情緒。分鏡 cast 寫 beat（加 beat_at 秒、要看誰就寫 look_at），compile 展開成 gesture／mood／mood_to／eyes／mouth 等欄位；cast 自己寫的欄位優先。mood、mood_to 依角色給（沒列到的角色就不換臉，例如不畫臉的大人）。",
+ "beats": {
+  "comfy": {
+   "label": "舒服", "desc": "閉眼、身體靠過去（被梳、被摸、被抱）", "status": "approved",
+   "species": ["quadruped", "baby", "child"], "set": {"eyes": "closed", "gesture": "lean"},
+   "example": "ep01 s15：帕帕被媽媽梳，閉眼靠過去"
+  },
+  "oops": {
+   "label": "糟糕", "desc": "做錯事、被抓包：聳肩攤手、看鏡頭", "status": "approved",
+   "species": ["human", "quadruped", "baby", "child"], "set": {"gesture": "shrug", "look_at": "camera"},
+   "example": "ep01 s08：爸爸拿自己的梳子，聳肩"
+  },
+  "disgusted": {
+   "label": "嫌棄", "desc": "換成嫌棄臉、乾嘔", "status": "approved",
+   "species": ["quadruped", "baby", "child"], "set": {"gesture": "gag", "mood_to": {"papa": "unimpressed", "beibei": "scared", "baby": "cry", "sister": "angry", "brother": "angry"}},
+   "example": "帕帕聞到怪味"
+  },
+  "refuse": {
+   "label": "不要", "desc": "搖頭（不對、不要、才不是）", "status": "approved",
+   "species": ["human", "quadruped", "baby", "child"], "set": {"gesture": "shake"},
+   "example": "ep01 s01：爸爸慌張搖頭"
+  },
+  "agree": {
+   "label": "對啦", "desc": "看向對方、點頭（同意、示範時說好）", "status": "approved",
+   "species": ["human", "quadruped", "baby", "child"], "set": {"gesture": "nod"},
+   "example": "ep01 s12：媽媽點頭進場"
+  },
+  "proud": {
+   "label": "得意", "desc": "換成得意／開心的臉、點頭、看鏡頭", "status": "approved",
+   "species": ["quadruped", "baby", "child"], "set": {"gesture": "nod", "look_at": "camera", "mood_to": {"papa": "smug", "beibei": "happy", "baby": "giggle", "sister": "happy", "brother": "laugh"}},
+   "example": "收尾帕帕一句金句"
+  },
+  "surprised": {
+   "label": "嚇到", "desc": "換成驚訝／害怕的臉、嚇一跳", "status": "draft",
+   "species": ["human", "quadruped", "baby", "child"], "set": {"gesture": "startle", "mood_to": {"papa": "surprised", "beibei": "scared", "baby": "cry", "sister": "surprised", "brother": "surprised"}},
+   "example": "貝貝撲進毛堆那一刻，帕帕嚇一跳"
+  },
+  "curious": {
+   "label": "好奇", "desc": "看向目標、歪頭（這是什麼？）", "status": "draft",
+   "species": ["human", "quadruped", "baby", "child"], "set": {"gesture": "tilt", "mood_to": {"baby": "curious", "beibei": "innocent", "papa": "neutral", "sister": "smile", "brother": "smile"}},
+   "example": "寶寶第一次看到湯匙"
+  },
+  "sniff_check": {
+   "label": "聞聞看", "desc": "頭湊過去聞三下（寵物檢查新東西）", "status": "approved",
+   "species": ["quadruped", "baby", "child"], "set": {"gesture": "sniff"},
+   "example": "貝貝聞寶寶的副食品"
+  },
+  "explain": {
+   "label": "說明", "desc": "指向目標、邊指邊說（帕帕講解；mouth talk 只對有臉的角色有效）", "status": "approved",
+   "species": ["quadruped", "baby", "child"], "set": {"gesture": "point", "mouth": "talk"},
+   "example": "帕帕指著梳子講"
+  },
+  "celebrate": {
+   "label": "歡呼", "desc": "換成開心的臉、兩手舉高彈一下", "status": "draft",
+   "species": ["quadruped", "baby", "child"], "set": {"gesture": "cheer", "mood_to": {"papa": "smug", "beibei": "excited", "baby": "giggle", "sister": "happy", "brother": "laugh"}},
+   "example": "寶寶第一口吃下去，全家歡呼"
+  },
+  "resigned": {
+   "label": "無奈", "desc": "換成無言的臉、低頭嘆氣（又來了）", "status": "draft",
+   "species": ["human", "quadruped", "baby", "child"], "set": {"gesture": "sigh", "mood_to": {"papa": "unimpressed", "beibei": "innocent", "sister": "sad", "brother": "cry"}},
+   "example": "帕帕看爸爸又拿錯東西"
+  },
+  "greet": {
+   "label": "打招呼", "desc": "看向對方、揮手", "status": "draft",
+   "species": ["human", "quadruped", "baby", "child"], "set": {"gesture": "wave"},
+   "example": "爸爸下班回家揮手"
+  },
+  "excited": {
+   "label": "超興奮", "desc": "換成興奮的臉、尾巴猛甩（狗看到玩具）", "status": "draft",
+   "species": ["quadruped"], "set": {"gesture": "wag_fast", "mood_to": {"beibei": "excited", "papa": "surprised"}},
+   "example": "貝貝看到毛堆"
+  }
+ }
+}

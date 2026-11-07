@@ -1,0 +1,1271 @@
+{
+ "canvas": [
+  1024,
+  1024
+ ],
+ "foot": [
+  512,
+  960
+ ],
+ "poses": {
+  "sit": {
+   "file": "pose_sit.webp",
+   "world_height": 45,
+   "expression": "happy",
+   "bbox": [
+    181,
+    60,
+    843,
+    960
+   ],
+   "tail": "tail_sit.webp",
+   "tail_pivot": [
+    688,
+    692
+   ],
+   "parts": {
+    "body": {
+     "file": "p_sit_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 0.995,
+      "outside_diff": 8.8,
+      "iou": 0.9946,
+      "remnant": {
+       "front": 0.43,
+       "front2": 0.411,
+       "hind": 0.103
+      },
+      "remnant_before": {
+       "front": 0.319,
+       "front2": 0.372,
+       "hind": 0.241
+      }
+     }
+    },
+    "head": {
+     "file": "p_sit_head.webp",
+     "pivot": [
+      433,
+      465
+     ],
+     "bbox": [
+      185,
+      64,
+      682,
+      520
+     ],
+     "avatar_scale": 0.5478,
+     "expressions": {
+      "innocent": {
+       "file": "p_sit_head_innocent.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": -1,
+        "dy": -1,
+        "inside": 0.997,
+        "iou": 0.991,
+        "body_diff": 8.0,
+        "head_changed": 13.4,
+        "center": [
+         -1,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.996
+       }
+      },
+      "scared": {
+       "file": "p_sit_head_scared.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": -1,
+        "dy": -1,
+        "inside": 0.997,
+        "iou": 0.991,
+        "body_diff": 8.2,
+        "head_changed": 13.9,
+        "center": [
+         -1,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.996
+       }
+      },
+      "excited": {
+       "file": "p_sit_head_excited.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.993,
+        "body_diff": 5.5,
+        "head_changed": 15.0,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.996
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_sit_front.webp",
+     "pivot": [
+      322,
+      649
+     ],
+     "bbox": [
+      249,
+      596,
+      396,
+      955
+     ]
+    },
+    "front2": {
+     "file": "p_sit_front2.webp",
+     "pivot": [
+      559,
+      656
+     ],
+     "bbox": [
+      490,
+      603,
+      628,
+      957
+     ]
+    },
+    "hind": {
+     "file": "p_sit_hind.webp",
+     "pivot": [
+      466,
+      714
+     ],
+     "bbox": [
+      218,
+      678,
+      714,
+      923
+     ]
+    }
+   }
+  },
+  "stand": {
+   "file": "pose_stand.webp",
+   "world_height": 45,
+   "expression": "innocent",
+   "bbox": [
+    141,
+    60,
+    882,
+    960
+   ],
+   "tail": "tail_stand.webp",
+   "tail_pivot": [
+    722,
+    415
+   ],
+   "parts": {
+    "body": {
+     "file": "p_stand_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 0.996,
+      "outside_diff": 5.5,
+      "iou": 0.9911,
+      "remnant": {
+       "front": 0.03,
+       "front2": 0.255,
+       "hind": 0.278
+      },
+      "remnant_before": {
+       "front": 0.132,
+       "front2": 0.238,
+       "hind": 0.588
+      }
+     }
+    },
+    "head": {
+     "file": "p_stand_head.webp",
+     "pivot": [
+      363,
+      507
+     ],
+     "bbox": [
+      141,
+      60,
+      586,
+      568
+     ],
+     "avatar_scale": 0.6524,
+     "expressions": {
+      "happy": {
+       "file": "p_stand_head_happy.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.992,
+        "body_diff": 4.9,
+        "head_changed": 12.9,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.993
+       }
+      },
+      "scared": {
+       "file": "p_stand_head_scared.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.992,
+        "body_diff": 4.9,
+        "head_changed": 12.5,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.993
+       }
+      },
+      "excited": {
+       "file": "p_stand_head_excited.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.992,
+        "body_diff": 4.8,
+        "head_changed": 15.0,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.996
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_stand_front.webp",
+     "pivot": [
+      334,
+      718
+     ],
+     "bbox": [
+      272,
+      682,
+      397,
+      926
+     ]
+    },
+    "front2": {
+     "file": "p_stand_front2.webp",
+     "pivot": [
+      496,
+      717
+     ],
+     "bbox": [
+      425,
+      675,
+      568,
+      957
+     ]
+    },
+    "hind": {
+     "file": "p_stand_hind.webp",
+     "pivot": [
+      698,
+      616
+     ],
+     "bbox": [
+      567,
+      567,
+      830,
+      895
+     ]
+    }
+   }
+  },
+  "run": {
+   "file": "pose_run.webp",
+   "world_height": 40,
+   "expression": "excited",
+   "bbox": [
+    22,
+    136,
+    1002,
+    960
+   ],
+   "tail": "tail_run.webp",
+   "tail_pivot": [
+    239,
+    504
+   ],
+   "parts": {
+    "body": {
+     "file": "p_run_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 0.988,
+      "outside_diff": 9.1,
+      "iou": 0.9925,
+      "remnant": {
+       "front": 0.185,
+       "front2": 0.002,
+       "hind": 0.401
+      },
+      "remnant_before": {
+       "front": 0.414,
+       "front2": 0.205,
+       "hind": 0.727
+      }
+     }
+    },
+    "head": {
+     "file": "p_run_head.webp",
+     "pivot": [
+      717,
+      704
+     ],
+     "bbox": [
+      442,
+      140,
+      936,
+      781
+     ],
+     "expressions": {
+      "happy": {
+       "file": "p_run_head_happy.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.996,
+        "iou": 0.989,
+        "body_diff": 6.2,
+        "head_changed": 12.7,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.998
+       }
+      },
+      "innocent": {
+       "file": "p_run_head_innocent.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.99,
+        "body_diff": 6.2,
+        "head_changed": 15.2,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.998
+       }
+      },
+      "scared": {
+       "file": "p_run_head_scared.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.99,
+        "body_diff": 6.1,
+        "head_changed": 16.5,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.998
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_run_front.webp",
+     "pivot": [
+      696,
+      684
+     ],
+     "bbox": [
+      536,
+      636,
+      856,
+      957
+     ]
+    },
+    "front2": {
+     "file": "p_run_front2.webp",
+     "pivot": [
+      863,
+      700
+     ],
+     "bbox": [
+      729,
+      679,
+      998,
+      825
+     ]
+    },
+    "hind": {
+     "file": "p_run_hind.webp",
+     "pivot": [
+      217,
+      618
+     ],
+     "bbox": [
+      25,
+      568,
+      410,
+      906
+     ]
+    }
+   }
+  },
+  "hide": {
+   "file": "pose_hide.webp",
+   "world_height": 22,
+   "expression": "scared",
+   "bbox": [
+    22,
+    359,
+    1002,
+    960
+   ],
+   "tail": "tail_hide.webp",
+   "tail_pivot": [
+    235,
+    705
+   ],
+   "parts": {
+    "body": {
+     "file": "p_hide_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 1.0,
+      "outside_diff": 0.7,
+      "iou": 0.9944,
+      "remnant": {
+       "front": 0.158,
+       "front2": 0.0,
+       "hind": 0.516,
+       "head": 0.109
+      },
+      "remnant_before": {
+       "front": 0.558,
+       "front2": 0.133,
+       "hind": 0.592,
+       "head": 0.254
+      }
+     }
+    },
+    "head": {
+     "file": "p_hide_head.webp",
+     "pivot": [
+      710,
+      850
+     ],
+     "bbox": [
+      430,
+      363,
+      999,
+      917
+     ]
+    },
+    "front": {
+     "file": "p_hide_front.webp",
+     "pivot": [
+      593,
+      560
+     ],
+     "bbox": [
+      480,
+      509,
+      706,
+      849
+     ]
+    },
+    "front2": {
+     "file": "p_hide_front2.webp",
+     "pivot": [
+      865,
+      561
+     ],
+     "bbox": [
+      772,
+      507,
+      958,
+      873
+     ]
+    },
+    "hind": {
+     "file": "p_hide_hind.webp",
+     "pivot": [
+      194,
+      775
+     ],
+     "bbox": [
+      25,
+      744,
+      364,
+      957
+     ]
+    }
+   },
+   "head_locked": true
+  },
+  "carry": {
+   "file": "pose_carry.webp",
+   "world_height": 45,
+   "expression": "innocent",
+   "bbox": [
+    136,
+    60,
+    887,
+    960
+   ],
+   "tail": "tail_carry.webp",
+   "tail_pivot": [
+    731,
+    416
+   ],
+   "parts": {
+    "body": {
+     "file": "p_carry_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 0.995,
+      "outside_diff": 5.9,
+      "iou": 0.989,
+      "remnant": {
+       "front": 0.039,
+       "front2": 0.126,
+       "hind": 0.357
+      },
+      "remnant_before": {
+       "front": 0.176,
+       "front2": 0.156,
+       "hind": 0.351
+      }
+     }
+    },
+    "head": {
+     "file": "p_carry_head.webp",
+     "pivot": [
+      357,
+      514
+     ],
+     "bbox": [
+      140,
+      63,
+      587,
+      576
+     ],
+     "expressions": {
+      "happy": {
+       "file": "p_carry_head_happy.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.991,
+        "body_diff": 4.8,
+        "head_changed": 12.1,
+        "center": [
+         0,
+         -1
+        ],
+        "neck": -2,
+        "w_ratio": 0.996
+       }
+      },
+      "scared": {
+       "file": "p_carry_head_scared.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.991,
+        "body_diff": 4.8,
+        "head_changed": 10.9,
+        "center": [
+         0,
+         -1
+        ],
+        "neck": -2,
+        "w_ratio": 0.996
+       }
+      },
+      "excited": {
+       "file": "p_carry_head_excited.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.999,
+        "iou": 0.991,
+        "body_diff": 4.8,
+        "head_changed": 13.8,
+        "center": [
+         0,
+         -1
+        ],
+        "neck": -2,
+        "w_ratio": 0.996
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_carry_front.webp",
+     "pivot": [
+      337,
+      697
+     ],
+     "bbox": [
+      271,
+      658,
+      403,
+      924
+     ]
+    },
+    "front2": {
+     "file": "p_carry_front2.webp",
+     "pivot": [
+      502,
+      671
+     ],
+     "bbox": [
+      433,
+      621,
+      572,
+      955
+     ]
+    },
+    "hind": {
+     "file": "p_carry_hind.webp",
+     "pivot": [
+      704,
+      594
+     ],
+     "bbox": [
+      574,
+      542,
+      835,
+      893
+     ]
+    }
+   }
+  },
+  "carry_fur": {
+   "file": "pose_carry_fur.webp",
+   "world_height": 45,
+   "expression": "innocent",
+   "bbox": [
+    123,
+    60,
+    901,
+    960
+   ],
+   "tail": "tail_carry_fur.webp",
+   "tail_pivot": [
+    752,
+    416
+   ],
+   "parts": {
+    "body": {
+     "file": "p_carry_fur_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 0.999,
+      "outside_diff": 6.9,
+      "iou": 0.9874,
+      "remnant": {
+       "front": 0.003,
+       "front2": 0.282,
+       "hind": 0.299
+      },
+      "remnant_before": {
+       "front": 0.157,
+       "front2": 0.15,
+       "hind": 0.641
+      }
+     }
+    },
+    "head": {
+     "file": "p_carry_fur_head.webp",
+     "pivot": [
+      368,
+      504
+     ],
+     "bbox": [
+      158,
+      62,
+      600,
+      565
+     ],
+     "expressions": {
+      "happy": {
+       "file": "p_carry_fur_head_happy.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": 1,
+        "inside": 0.999,
+        "iou": 0.99,
+        "body_diff": 5.2,
+        "head_changed": 13.0,
+        "center": [
+         0,
+         1
+        ],
+        "neck": 0,
+        "w_ratio": 0.998
+       }
+      },
+      "scared": {
+       "file": "p_carry_fur_head_scared.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": -1,
+        "dy": -1,
+        "inside": 0.997,
+        "iou": 0.988,
+        "body_diff": 6.8,
+        "head_changed": 13.6,
+        "center": [
+         -1,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.996
+       }
+      },
+      "excited": {
+       "file": "p_carry_fur_head_excited.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": -1,
+        "dy": -1,
+        "inside": 0.997,
+        "iou": 0.988,
+        "body_diff": 6.9,
+        "head_changed": 17.7,
+        "center": [
+         -1,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.996
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_carry_fur_front.webp",
+     "pivot": [
+      352,
+      706
+     ],
+     "bbox": [
+      287,
+      668,
+      417,
+      923
+     ]
+    },
+    "front2": {
+     "file": "p_carry_fur_front2.webp",
+     "pivot": [
+      515,
+      682
+     ],
+     "bbox": [
+      445,
+      635,
+      585,
+      954
+     ]
+    },
+    "hind": {
+     "file": "p_carry_fur_hind.webp",
+     "pivot": [
+      718,
+      583
+     ],
+     "bbox": [
+      587,
+      529,
+      849,
+      892
+     ]
+    }
+   }
+  },
+  "dive": {
+   "file": "pose_dive.webp",
+   "world_height": 38,
+   "expression": "excited",
+   "bbox": [
+    22,
+    283,
+    1002,
+    960
+   ],
+   "parts": {
+    "body": {
+     "file": "p_dive_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 0.987,
+      "outside_diff": 8.0,
+      "iou": 0.9954,
+      "remnant": {
+       "front": 0.007,
+       "front2": 0.243,
+       "hind": 0.348
+      },
+      "remnant_before": {
+       "front": 0.18,
+       "front2": 0.447,
+       "hind": 0.72
+      }
+     }
+    },
+    "head": {
+     "file": "p_dive_head.webp",
+     "pivot": [
+      314,
+      601
+     ],
+     "bbox": [
+      139,
+      285,
+      529,
+      645
+     ],
+     "expressions": {
+      "happy": {
+       "file": "p_dive_head_happy.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.991,
+        "iou": 0.985,
+        "body_diff": 6.6,
+        "head_changed": 14.8,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.995
+       }
+      },
+      "innocent": {
+       "file": "p_dive_head_innocent.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.997,
+        "iou": 0.982,
+        "body_diff": 6.6,
+        "head_changed": 19.7,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.997
+       }
+      },
+      "scared": {
+       "file": "p_dive_head_scared.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": -1,
+        "inside": 0.998,
+        "iou": 0.982,
+        "body_diff": 6.6,
+        "head_changed": 19.6,
+        "center": [
+         0,
+         0
+        ],
+        "neck": 0,
+        "w_ratio": 0.995
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_dive_front.webp",
+     "pivot": [
+      150,
+      706
+     ],
+     "bbox": [
+      24,
+      679,
+      276,
+      864
+     ]
+    },
+    "front2": {
+     "file": "p_dive_front2.webp",
+     "pivot": [
+      298,
+      724
+     ],
+     "bbox": [
+      140,
+      683,
+      456,
+      957
+     ]
+    },
+    "hind": {
+     "file": "p_dive_hind.webp",
+     "pivot": [
+      817,
+      635
+     ],
+     "bbox": [
+      634,
+      594,
+      1001,
+      873
+     ]
+    }
+   }
+  },
+  "furry": {
+   "file": "pose_furry.webp",
+   "world_height": 48,
+   "expression": "happy",
+   "bbox": [
+    126,
+    60,
+    899,
+    960
+   ],
+   "parts": {
+    "body": {
+     "file": "p_furry_body.webp",
+     "qa": {
+      "scale": 1.0,
+      "dx": 0,
+      "dy": 0,
+      "inside": 0.997,
+      "outside_diff": 9.1,
+      "iou": 0.9969,
+      "remnant": {
+       "front": 0.259,
+       "front2": 0.264,
+       "hind": 0.202
+      },
+      "remnant_before": {
+       "front": 0.21,
+       "front2": 0.838,
+       "hind": 0.6
+      }
+     }
+    },
+    "head": {
+     "file": "p_furry_head.webp",
+     "pivot": [
+      468,
+      534
+     ],
+     "bbox": [
+      214,
+      85,
+      717,
+      596
+     ],
+     "avatar_scale": 0.6139,
+     "expressions": {
+      "innocent": {
+       "file": "p_furry_head_innocent.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": 1,
+        "inside": 0.999,
+        "iou": 0.985,
+        "body_diff": 8.9,
+        "head_changed": 16.8,
+        "center": [
+         0,
+         2
+        ],
+        "neck": 0,
+        "w_ratio": 0.986
+       }
+      },
+      "scared": {
+       "file": "p_furry_head_scared.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": 1,
+        "inside": 0.999,
+        "iou": 0.985,
+        "body_diff": 9.0,
+        "head_changed": 17.3,
+        "center": [
+         0,
+         2
+        ],
+        "neck": 0,
+        "w_ratio": 0.986
+       }
+      },
+      "excited": {
+       "file": "p_furry_head_excited.webp",
+       "qa": {
+        "scale": 1.0,
+        "dx": 0,
+        "dy": 1,
+        "inside": 0.999,
+        "iou": 0.985,
+        "body_diff": 8.9,
+        "head_changed": 17.2,
+        "center": [
+         0,
+         2
+        ],
+        "neck": 0,
+        "w_ratio": 0.986
+       }
+      }
+     }
+    },
+    "front": {
+     "file": "p_furry_front.webp",
+     "pivot": [
+      372,
+      711
+     ],
+     "bbox": [
+      301,
+      668,
+      444,
+      955
+     ]
+    },
+    "front2": {
+     "file": "p_furry_front2.webp",
+     "pivot": [
+      586,
+      689
+     ],
+     "bbox": [
+      509,
+      642,
+      663,
+      958
+     ]
+    },
+    "hind": {
+     "file": "p_furry_hind.webp",
+     "pivot": [
+      493,
+      723
+     ],
+     "bbox": [
+      230,
+      688,
+      757,
+      926
+     ]
+    }
+   }
+  }
+ },
+ "heads": {
+  "happy": {
+   "file": "head_happy.webp",
+   "neck": [
+    512,
+    962
+   ],
+   "eyes": null
+  },
+  "innocent": {
+   "file": "head_innocent.webp",
+   "neck": [
+    512,
+    932
+   ],
+   "eyes": [
+    {
+     "x": 286,
+     "y": 342,
+     "w": 156,
+     "h": 141,
+     "color": "#f8e0b7"
+    },
+    {
+     "x": 582,
+     "y": 342,
+     "w": 156,
+     "h": 141,
+     "color": "#f8dcad"
+    }
+   ],
+   "blink": "blink_innocent.webp",
+   "blink_qa": {
+    "scale": 1.0,
+    "dx": 0,
+    "dy": 1,
+    "inside": 0.999,
+    "outside_diff": 4.9,
+    "eye_changed": 64.5
+   },
+   "pupil_off": "瞳孔移動會在原位留下高光白斑，已拿掉；看向目標只轉頭"
+  },
+  "scared": {
+   "file": "head_scared.webp",
+   "neck": [
+    512,
+    910
+   ],
+   "eyes": [
+    {
+     "x": 374,
+     "y": 340,
+     "w": 60,
+     "h": 64,
+     "color": "#fbf8ea"
+    },
+    {
+     "x": 598,
+     "y": 340,
+     "w": 60,
+     "h": 64,
+     "color": "#fcf8eb"
+    }
+   ],
+   "blink": "blink_scared.webp",
+   "blink_qa": {
+    "scale": 1.0,
+    "dx": 0,
+    "dy": 0,
+    "inside": 1.0,
+    "outside_diff": 3.8,
+    "eye_changed": 84.0
+   },
+   "pupil_off": "瞳孔移動會在原位留下高光白斑，已拿掉；看向目標只轉頭"
+  },
+  "excited": {
+   "file": "head_excited.webp",
+   "neck": [
+    512,
+    962
+   ],
+   "eyes": [
+    {
+     "x": 346,
+     "y": 348,
+     "w": 104,
+     "h": 96,
+     "color": "#f7ead6"
+    },
+    {
+     "x": 569,
+     "y": 344,
+     "w": 104,
+     "h": 96,
+     "color": "#f7ead6"
+    }
+   ],
+   "blink": "blink_excited.webp",
+   "blink_qa": {
+    "scale": 1.0,
+    "dx": 0,
+    "dy": 0,
+    "inside": 1.0,
+    "outside_diff": 4.2,
+    "eye_changed": 63.8
+   },
+   "pupil_off": "瞳孔移動會在原位留下高光白斑，已拿掉；看向目標只轉頭"
+  },
+  "furry": {
+   "file": "head_furry.webp",
+   "neck": [
+    512,
+    962
+   ],
+   "eyes": [
+    {
+     "x": 344,
+     "y": 359,
+     "w": 104,
+     "h": 96,
+     "color": "#f7dcad"
+    },
+    {
+     "x": 563,
+     "y": 363,
+     "w": 104,
+     "h": 96,
+     "color": "#f7dcad"
+    }
+   ],
+   "blink": "blink_furry.webp",
+   "blink_qa": {
+    "scale": 1.0,
+    "dx": -1,
+    "dy": 0,
+    "inside": 0.999,
+    "outside_diff": 8.6,
+    "eye_changed": 71.3
+   },
+   "pupil_off": "瞳孔移動會在原位留下高光白斑，已拿掉；看向目標只轉頭"
+  }
+ },
+ "note": "world_height 單位 cm（場景換算比例用）；tail_pivot 為尾根（甩尾旋轉中心）；heads.*.eyes 兩眼框（畫布座標）與眼皮色，null＝閉眼表情不眨眼"
+}
