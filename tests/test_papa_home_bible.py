@@ -145,6 +145,9 @@ def test_series_name_is_papa_baby_home_everywhere():
             if "node_modules" in path.parts or not path.is_file() or path.suffix not in {".py", ".md", ".json", ".ts", ".tsx", ".js"}:
                 continue
             text = path.read_text(encoding="utf-8", errors="ignore")
+            # 營運紀錄（issue.md、selection/plans/superpowers）是照原樣保留的歷史，不掃
+            if {"selection", "plans", "superpowers"} & set(path.parts) or path.name == "issue.md":
+                continue
             if old in text and path.name != "papa-home-series.md":
                 hits.append(str(path.relative_to(PROJECT_ROOT)))
     assert not hits, f"還有舊名 {old}：{hits}"
